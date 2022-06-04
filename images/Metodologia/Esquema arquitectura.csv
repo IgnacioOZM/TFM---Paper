@@ -1,0 +1,30 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Status,Text Area 1
+1,Document,,,,,,,,,DRAFT,Esquema arquitectura
+2,Page,,,,,,,,,,Timeline with colored intervals
+3,SVGPathBlock2,,2,,,,,,,,
+4,SVGPathBlock2,,2,,28,,,,,,
+5,SVGPathBlock2,,2,,28,,,,,,
+6,SVGPathBlock2,,2,,,,,,,,
+7,SVGPathBlock2,,2,,29,,,,,,
+8,SVGPathBlock2,,2,,29,,,,,,
+9,Rectangle,Geometric Shapes,2,,,,,,,,Pedido
+10,Circle,Geometric Shapes,2,,,,,,,,1
+11,Rectangle,Geometric Shapes,2,,,,,,,,Procesado
+12,Circle,Geometric Shapes,2,,,,,,,,2
+13,Rectangle,Geometric Shapes,2,,,,,,,,Desplazo
+14,Circle,Geometric Shapes,2,,,,,,,,3
+15,Rectangle,Geometric Shapes,2,,,,,,,,Fotografía
+16,Circle,Geometric Shapes,2,,,,,,,,4
+17,Rectangle,Geometric Shapes,2,,,,,,,,Análisis
+18,Circle,Geometric Shapes,2,,,,,,,,5
+19,Rectangle,Geometric Shapes,2,,,,,,,,Recolecta
+20,Circle,Geometric Shapes,2,,,,,,,,6
+21,Rectangle,Geometric Shapes,2,,,,,,,,Entrega
+22,Circle,Geometric Shapes,2,,,,,,,,7
+23,SVGPathBlock2,,2,,,,,,,,
+24,SVGPathBlock2,,2,,,,,,,,
+25,SVGPathBlock2,,2,,,,,,,,
+26,Line,,2,,,22,12,None,Arrow,,
+27,Line,,2,,,12,22,None,Arrow,,
+28,Group 1,,2,,,,,,,,
+29,Group 2,,2,,,,,,,,
