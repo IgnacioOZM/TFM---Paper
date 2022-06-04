@@ -1,0 +1,325 @@
+% -----------------------------------------------------------------------------------
+% ------------------------------- USER DEFINED MACROS -------------------------------
+% -----------------------------------------------------------------------------------                                    
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{macros}
+
+% ----------------------------------------------------------------------------------- 
+
+% Alias
+\let\mc\multicolumn
+\let\mr\multirow
+\let\rr\raggedright
+\let\rl\raggedleft
+\let\sups\textsuperscript
+\let\subs\textsubscript
+
+% ----------------------------------------------------------------------------------- 
+
+% Frontcover
+\providecommand{\Frontcover}{
+  {\pagestyle{empty}
+  {\newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2cm}
+  \centering
+  \includegraphics[width = 5cm]{logo.pdf}\\
+  \vspace{0.75cm}
+  \fontsize{18}{18}\sffamily\fontseries{sb}\selectfont \MakeUppercase{\theDegree}\\
+  \vspace{\fill}
+  \fontsize{18}{18}\sffamily\fontseries{sb}\selectfont \MakeUppercase{\theSubject}\\
+  \vspace{0.75cm}
+  \fontsize{27}{27}\sffamily\bfseries\selectfont \MakeUppercase{\theTitle}\\
+  \vspace{2cm}
+  \fontsize{14}{14}\sffamily\fontseries{sb}\selectfont
+  \authorname:~\theAuthor\\ 
+  \vspace{0.25cm}
+  % Allow for several supervisors
+  \StrCount{\theSupervisors}{,}[\numCommas]
+  \ifthenelse{\equal{\numCommas}{0}}{         
+    \supervisorname:~\theSupervisors\\ 
+  }{
+    \supervisorsname:\\
+    \makeatletter
+      \@for\@myarg:=\theSupervisors\do
+        {\vspace{0.15cm} \@myarg \\}
+    \makeatother
+  }
+  \vspace{\fill}
+  \fontsize{14}{14}\selectfont
+  Madrid\\
+  \vspace{0.25cm}
+  \fontsize{12}{12}\selectfont
+  \theDate
+  \restoregeometry}
+  
+  \clearpage
+  
+  \null
+	\vspace{\fill}
+	\noindent \mbox{Copyright \textcopyright \ \the\year \ \theAuthor}
+	
+	\vspace{1.5cm}
+	\noindent Este trabajo fue escrito con \LaTeX \ y compilado en \TeX maker usando la distribución \TeX Live -2013. Las familias de fuentes usadas son Bitstream Charter, Utopia, Bookman, and Computer Modern. A menos que se indique lo contrario, todas las figuras fueron creadas por el autor usando Lucidchart\textsuperscript{\textregistered}, draw.io\textsuperscript{\textregistered} y Python\textsuperscript{\textregistered}.
+	\cleardoublepage}
+}
+	
+% ----------------------------------------------------------------------------------- 	
+	
+% \Figure[Position]{Format}{File.ext}{Caption}{fig:Label}
+\providecommand{\Figure}[5][]{
+  \begin{figure}[#1]
+	\centering
+    \includegraphics[#2]{#3}
+    \caption{#4.}
+    \label{#5}
+    \vspace{-5pt}
+  \end{figure}
+}
+	
+% ----------------------------------------------------------------------------------- 
+								
+% \FigureShortCaption[Position]{Format}{File.ext}{Caption}{Short caption}{fig:Label}				
+\providecommand{\FigureShortCaption}[6][]{
+  \begin{figure}[#1]
+    \centering
+    \includegraphics[#2]{#3}
+    \caption[#5]{#4.}
+    \label{#6}
+    \vspace{-5pt}
+  \end{figure}
+}	
+
+% ----------------------------------------------------------------------------------- 
+																															
+% \Table[Position]{Column format}{Font size}{Table}{Caption}{tab:Label}			
+\providecommand{\Table}[6][]{
+  \vspace{-2.5pt}  
+  \begin{table}[#1]
+    \centering #3
+    \caption{#5.}
+    \label{#6}
+    \vspace{2pt}
+	\begin{tabular}{#2}
+	  #4
+	\end{tabular}
+	\vspace{-5pt}
+  \end{table}
+}
+	
+% ----------------------------------------------------------------------------------- 	
+
+% \TableShortCaption[Position]{Column format}{Font size}{Table}{Caption}{Short caption}{tab:Label}			
+\providecommand{\TableShortCaption}[7][]{
+  \vspace{-2.5pt}  
+  \begin{table}[#1]
+    \centering #3
+    \caption[#6]{#5.}
+    \label{#7}
+    \vspace{2pt}
+	\begin{tabular}{#2}
+	  #4
+	\end{tabular}
+	\vspace{-5pt}
+  \end{table}
+}
+
+% ----------------------------------------------------------------------------------- 
+									
+% \TableDoubleColumn[Position]{Column format}{Font size}{Table}{Caption}{tab:Label}			
+\providecommand{\TableDoubleColumn}[6][]{
+  \vspace{-2.5pt}  
+  \begin{table*}[#1]
+    \centering #3
+    \hfill{}
+    \caption{#5.}
+    \label{#6}
+    \vspace{2pt}
+    \begin{tabular}{#2}
+      #4
+    \end{tabular}
+    \vspace{-5pt}
+    \hfill{}
+    \end{table*}
+}
+
+% ----------------------------------------------------------------------------------- 
+														
+% \Equation{Equation}{eq:Label}					
+\providecommand{\Equation}[2]{
+  \begin{equation}
+    #1
+    \label{#2}
+  \end{equation}
+}
+
+% ----------------------------------------------------------------------------------- 
+							
+% Cuadro de texto
+\newlength\Linewidth
+\def\findlength{
+  \setlength\Linewidth\linewidth
+  \addtolength\Linewidth{-12\fboxrule}
+  \addtolength\Linewidth{-3\fboxsep}
+}
+\newenvironment{textbox}{
+  \par\begingroup
+  \setlength{\fboxsep}{5pt}\findlength
+  \setbox0=\vbox\bgroup\noindent
+				\hsize=\Linewidth
+				\begin{minipage}{\Linewidth}
+			}{
+				\end{minipage}\egroup
+				\vspace{6pt}
+				\noindent\textcolor{gray20}{\fboxsep2.5pt\fbox
+				{\fboxsep5pt\colorbox{gray05}{\normalcolor\box0}}}
+				\endgroup\par\addvspace{6pt minus 3pt}\noindent
+				\normalcolor\ignorespacesafterend
+			}							
+								
+% \TextBox{Texto}					
+\newcommand{\TextBox}[1]{
+  \begin{textbox}
+    #1
+  \end{textbox}
+  %\vspace{-10pt}
+}
+
+% ----------------------------------------------------------------------------------- 									
+										
+	% \InsertarCodigo{Lenguaje}{Ruta del archivo}				
+				\newcommand{\InsertarCodigo}[2]{#1 \lstinputlisting{#2}}
+				
+% ----------------------------------------------------------------------------------- 
+																	
+	% \Reference{Label}				
+		\newcommand{\Reference}[1]{\autoref{#1}. \nameref{#1}}
+		
+% ----------------------------------------------------------------------------------- 
+
+		%\newcommand{\Code}[1]{{\small \fontfamily{lmvtt}\selectfont #1}}
+		\providecommand{\Code}[1]{{\fontfamily{cmtt}\selectfont #1}}
+		
+% ----------------------------------------------------------------------------------- 
+		
+\providecommand{\TableOfContents}{
+  \cleardoublepage\tableofcontents
+  \markboth{\contentsname}{\contentsname}
+  \cleardoublepage
+}
+
+% ----------------------------------------------------------------------------------- 
+
+\providecommand{\ListOfFigures}{
+  \cleardoublepage\listoffigures
+  \markboth{\listfigurename}{\listfigurename}
+  \cleardoublepage
+}
+
+% ----------------------------------------------------------------------------------- 
+
+\providecommand{\ListOfTables}{
+  \cleardoublepage\listoftables
+  \markboth{\listtablename}{\listtablename}
+  \cleardoublepage
+}
+
+% ----------------------------------------------------------------------------------- 
+
+\providecommand{\ListOfListings}{
+  \cleardoublepage\lstlistoflistings\cleardoublepage
+}
+
+\providecommand{\ListOfAlgorithms}{
+ \cleardoublepage\listofalgorithms
+  \markboth{List of Algorithms}{List of Algorithms}
+  \cleardoublepage
+}
+
+% ----------------------------------------------------------------------------------- 
+
+\providecommand{\FrontmatterChapter}[1]{
+  \phantomsection
+  \chapter*{#1}
+  \addcontentsline{toc}{chapter}{#1}
+  \chaptermark{#1}
+  \markboth{#1}{#1}
+}
+
+\providecommand{\FrontmatterChapterNoToC}[1]{
+  \phantomsection
+  \chapter*{#1}
+  \chaptermark{#1}
+  \markboth{#1}{#1}
+}
+
+% ----------------------------------------------------------------------------------- 
+
+\providecommand{\Dedication}[1]{
+  {\selectlanguage{english}
+  \thispagestyle{empty}
+  \cleardoublepage  
+  \vspace*{6cm}
+  \raggedleft \itshape #1
+  \cleardoublepage}
+}
+
+% ----------------------------------------------------------------------------------- 
+
+% Horizontal rule. It will vanish should it fall at the bottom or at the top of a 
+% page, together with the spaces.
+% \HorizontalLine{width}{thickness}	
+\newcommand{\HorizontalLine}[2]{
+  \vskip\bigskipamount % \smallskipamount, \medskipamount, \bigskipamount or \topsep
+  \leaders\vrule width #1 \vskip #2
+  \vskip\bigskipamount
+  \nointerlineskip
+}
+
+\newenvironment{myquote}{\list{}{\leftmargin=0.225in\rightmargin=0.225in}\item[]}{\endlist}
+
+\providecommand{\Abstract}[1]{
+  \HorizontalLine{\textwidth}{0.65pt}
+  	\begin{myquote}
+      #1
+    \end{myquote}
+  \HorizontalLine{\textwidth}{0.65pt}
+}
+
+%\providecommand{\Abstract}[1]{
+%  {\noindent\rule{\textwidth}{0.65pt}
+%  	\begin{myquote}
+%      #1
+%    \vspace{-\parskip}
+%    \end{myquote}
+%  \noindent\rule{\textwidth}{0.65pt}}
+%}
+
+% ----------------------------------------------------------------------------------- 
+
+\providecommand{\Quote}[2]{
+  \epigraph{\itshape #1}{#2} 
+  \vspace{0.25cm plus 0.05cm minus 0.05cm}
+}
+
+\providecommand{\Blankpage}{
+  \cleardoublepage
+    \newpage
+    \thispagestyle{empty}
+    \null
+  \cleardoublepage
+}
+
+\providecommand{\Acronyms}{
+  \cleardoublepage\printacronyms[heading = chapter*]
+  \markboth{Acronyms}{Acronyms}
+  \cleardoublepage
+}
+
+\providecommand{\rev}[1]{%
+ {\color{blue}#1}%
+}
+
+% Conditional independence
+\def\ci{\perp\!\!\!\perp}
+
+\input{Acronyms.tex}
