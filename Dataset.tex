@@ -1,6 +1,6 @@
 \chapter{Generación de un dataset}
 \label{chap:Generación de un dataset}
-\Abstract{Un buen sistema de visión artificial requiere de un buen \textit{dataset}. En este capítulo se desarrollará y justificará la creación de un \textit{dataset} real así como un \textit{dataset} sintético que permita expandir las capacidades del sistema de visión artificial.}
+\Abstract{Un buen sistema de visión artificial requiere de un buen \textit{dataset}. En este capítulo se desarrollará y justificará la creación de un \textit{dataset} sintético que permita expandir las capacidades del sistema de visión artificial.}
 
 Se entiende por \textit{dataset} a un conjunto de datos normalmente tabulados/organizados empleados en la ejecución de programas o algoritmos. El término \textit{dataset} es muy amplio y su funcionalidad y formato varía dependiendo del campo de desarrollo pero en este trabajo nos centraremos en una de las áreas donde mas se ha desarrollado el concepto, \textit{Machine Learning}. La capacidad de aprender de un modelo depende en primera instancia de la calidad del \textit{dataset}. Si este no tiene un formato correcto o no es capaz de asegurar la integridad de los datos entonces independientemente del modelo empleado el resultado sera desfavorable. Por lo tanto, la creación del \textit{dataset} es de vital importancia y debe de ser uno de los primeros pasos en el desarrollo de todo sistema basado en \textit{Machine Learning}.
 
@@ -59,35 +59,31 @@ Una vez entendido el problema se puede determinar el tipo de datos que se necesi
 \end{itemize}
 \end{itemize}
 
-\section{Dataset real}
-\label{chap:Generación de un dataset sec:dataset real}
-En desarrollo... Hablar con juan para ver que tal va.
-
-\section{Dataset sintético}
-\label{chap:Generación de un dataset sec:Dataset sintético}
-
-\subsection{Herramientas}
+\section{Herramientas}
+\label{chap:Generación de un dataset sec:Herramientas}
 La generación sintética de imágenes es una tarea compleja que requiere de avanzados motores y simuladores que permitan representar un entorno realista. Actualmente se trata de un campo todavía en desarrollo y por lo tanto no se dispone de herramientas específicamente diseñadas para cumplir ese objetivo. Sin embargo, si que existen sistemas/\textit{plugins} que permiten adaptar sistemas/herramientas ya existentes para permitir la generación de \textit{datasets} sintéticos. Para el desarrollo de este proyecto se ha escogido un sistema de esta categoría, BlenderProc. Es una \textit{\ac{api}} que permite controlar el programa Blender para la generación de \textit{datasets}.
 
-\subsubsection*{Blender}
+\subsection{Blender}
 \label{chap:Generación de un dataset subsec:Blender}
 Blender es una aplicación gratuita y \textit{open source} bajo una licencia GNU GLP que permite desarrollar proyectos 3D por completo. Cuenta con sistemas todos los sistemas necesarios para proyectos 3D: modelado, \textit{rigging}, animación, simulación, renderizado, composición, \textit{motion tracking}, edición de video y desarrollo de videojuegos. También permite un uso avanzado gracias a la existencia de una \acs{api} basada en Python llamada \textit{BPy}.
 
 Es gracias a la existencia de esta API que la comunidad puede desarrollar extensiones para Blender y así expandir las capacidades de este. Esto es de vital importancia para el desarrollo de este proyecto ya que para el desarrollo del \textit{dataset} sintético se ha empleado un \textit{pipeline} que facilita y automatiza la creación de \textit{datasets}. 
 
-\subsubsection*{BlenderProc}
+\subsection{BlenderProc}
 \label{chap:Generación de un dataset subsec:BlenderProc}
 BlenderProc es un \textit{pipeline} desarrollado por \ac{dlr-rm} con el fin simplificar el proceso de generación de \textit{datasets} centrados en imágenes para entrenar redes convolucionales \citep{denninger2019blenderproc}. Se caracteriza por centrarse en la modularidad al dotar a blender de un sistema con las herramientas necesarias para generar imágenes foto realistas pero que manteniendo una estructura modular que permite adaptarse al problema.
 
 Algunas de las utilidades de este \textit{pipeline} son: cargar, modificar, eliminar escenas y objetos, variar la iluminación, la composición de la escena, aplicar simuladores de físicas para obtener escenas realistas, renderizar imágenes de color, profundidad, distancia y normales. Y todo esto se realiza mediante \textit{scripts} que llaman a la \acs{api} de BlenderProc y esta se encarga de cargar y controlar Blender.
 
-\subsubsection*{Aruco}
+\subsection{Aruco}
 \label{chap:Generación de un dataset subsec:Aruco}
 Empleando Blender se puede renderizar imágenes foto realistas pero se sigue requiriendo del punto de agarre y del vector normal a dicho punto. Para ello se empleara un sistema de posprocesamiento basado en Aruco \citep{ArUco} que permite la extracción de la información restante. Aruco es una librearía basada en OpenCV diseñada para aplicaciones de realidad aumentada cuya principal ventaja y objetivo es la simplicidad. Permite detectar QR con un simple linea de código, el altamente eficiente y permite trabajar con múltiples diccionarios.
 
-\subsection{Arquitectura del generador de datasets}	
+\section{Arquitectura del generador de datasets}	
 \label{chap:Generación de un dataset sec:Arquitectura del generador de imágenes}
 El objetivo del generador de imágenes es obtener un número elevado de muestras con las que poder entrenar varios modelos de redes neuronales. Y tal como se ha definido en la \autoref{chap:Generación de un dataset sec:Estructura del dataset}, las muestras deben de estar constituidas por varias imagen así como información respecta a la posición de las piezas en la imagen e información respectos a los puntos de agarre. Desgraciadamente, no se ha podido determinar un único sistema que soporte la generación de las múltiples imágenes así como la definición de los puntos de agarre y por ello se ha tenido que crear una capa de posprocesamiento que permita extraer la información adicional necesaria.
+
+Este posprocesado requiere de la generación de una segunda imagen con una versión moficiada de las piezas. estas piezas presentan QR (Arucos) en las regiones de interés donde hay presente un punto de agarre. Gracias a la combinación de ambas imágenes se puede obtener todos los datos necesarios. El proceso se desarrolla en detalle en la \autoref{chap:Generación de un dataset sec:Posprocesado}
 
 \begin{figure}[ht]
 	\centering
@@ -97,22 +93,22 @@ El objetivo del generador de imágenes es obtener un número elevado de muestras
 	\vspace{-5pt}
 \end{figure}
 
-\subsubsection*{Generación de imágenes}
-\label{chap:Generación de un dataset subsec:Generación de imágenes}
-Como se puede observar en la \autoref{chap:Generación de un dataset fig:Arquitectura generador}, se trata de un proceso iterativo constituido por varias etapas que se ejecutan en serie para la generación de cada nueva imagen. A excepción de la primera etapa que consiste en la generación de los modelos 3D, esta etapa no forma parte del generador pero este depende de esta.
+Como se puede observar en la \autoref{chap:Generación de un dataset fig:Arquitectura generador}, se trata de un proceso iterativo constituido por varias etapas que se ejecutan en serie para la generación de cada nueva imagen. A excepción de la primera etapa que consiste en la generación de los modelos 3D, esta etapa no forma parte del generador pero este depende de la existencia de un modelo 3D con el que poder trabajar.
 
-En esta etapa se han diseñado múltiples piezas de diferentes tamaños con la ayuda de Blender así como múltiples entornos sobre los que más adelante se dispondrán las piezas. También se ha generado las texturas necesarias para las piezas las cuales incluyen defectos y patrones que se varían para cada instancia de estas añadiendo así aleatoriedad. Para los entornos emplearán una textura aleatoria para cada imagen de una librearía constituida por más de mil seiscientas texturas.
+En esta etapa se han diseñado múltiples piezas de diferentes tamaños con la ayuda de Blender así como múltiples entornos sobre los que más adelante se dispondrán las piezas. Para las piezas se parte de un archivos .stl que contienen la información dimensional de las piezas. Estos han sido cargados en Blender donde se ha modificado el número de triángulos para mejorar el rendimiento y la suavidad de las piezas. Y se ha generado las texturas necesarias para las piezas las cuales incluyen defectos y patrones que deben de variar para cada instancia de estas añadiendo así aleatoriedad. Los entornos se han desarrollado por completo en Blender y se caracterizan por ser sencillos y planos. Su objetivo es contener a las piezas y no formar 0 confundirse con estas. Para los entornos se empleará una textura aleatoria para cada imagen de una librearía \textit{open source} CCTextures y constituida por más de mil seiscientas texturas de alta calidad.
+
+Las piezas grandes requieren del uso de códigos QR que permitan en la etapa de posprocesado (\ref{chap:Generación de un dataset sec:Posprocesado}) extraer la información necesaria. Es por ello que en la etapa de modelado se debe de crear duplicados de las piezas grandes a los que se les insertará códigos QR en las zonas con posibles puntos de agarre.
 
 Partiendo de los modelos y texturas necesarios, el sistema desarrollado puede empezar a generar imágenes:
 
 \begin{enumerate}
 \item Escena: Carga del entorno, de las piezas, la iluminación y la cámara
 \begin{itemize}
-\item Entorno: Se escoge de forma aleatoria uno de los entornos disponibles y se carga dentro de blender. A continuación, se escoge de forma aleatoria una de las texturas disponibles y se aplica en la totalidad del entorno. Por último, se centra el entorno y se deshabilita el cuerpo dentro del motor de físicas. De esta forma se fija la posición del entorno y este pasa a ser inalterable. Pero el resto de objetos si que se verán afectados por el entorno.
+\item Entorno: Se escoge de forma aleatoria uno de los entornos disponibles y se carga dentro de blender. A continuación, se escoge una de las texturas disponibles y se aplica en la totalidad del entorno. Por último, se centra el entorno y se deshabilita el cuerpo dentro del motor de físicas. De esta forma se fija la posición del entorno y este pasa a ser inalterable.
 
-\item Piezas: Se escoge de forma aleatoria el número de piezas que estarán presentes en la escena (se establecen mínimos y máximos dependiendo del tamaño de la pieza) y se cargan junto con sus texturas dentro de blender. Por último, se define una propiedad \textit{category\_id} que más adelante será usada para identificar las distintas piezas.
+\item Piezas: Se escoge de forma aleatoria el número de piezas que estarán presentes en la escena (se establecen mínimos y máximos dependiendo del tamaño de la pieza) y se cargan dentro de blender. Por último, se define una propiedad \textit{category\_id} que más adelante será usada para identificar las distintas piezas.
 
-\item Iluminación: Se parte de la base de que el entorno de trabajo real estará bien iluminado. Es por ello que se han definido unas condiciones de iluminación fijas y óptimas que permitan reducir las sombras. Originalmente se planteo usar condiciones de iluminación aleatorias pero estas daban lugar a imágenes oscuras en las que apenas se podían distinguir las piezas. El efecto de las sombras se ve incrementado debido a la gran cantidad de piezas que presentas texturas oscuras.
+\item Iluminación: Se parte de la base de que el entorno de trabajo real estará bien iluminado, por ello que se han definido unas condiciones de iluminación fijas y óptimas que permitan reducir las sombras. Se planteo emplear una iluminación aleatoria pero esta daba lugar a demasiadas sombras y dificultaba ver el contorno de las piezas oscuras.
 
 \item Cámara: Para asemejarse a la realidad se ha fijado una cámara cenital a la escena y se ha implementado las parámetros intrínsecos de la cámara real que se va a emplear dentro de blender.
 \end{itemize}
@@ -120,97 +116,182 @@ Partiendo de los modelos y texturas necesarios, el sistema desarrollado puede em
 \item Simulación: activación de las piezas, posicionamiento de las piezas y simulación física.
 \begin{itemize}
 \item Activación de las piezas: se activa el motor de físicas para todas las piezas de forma que se vea afectadas por la gravedad y el entorno.
-\item Posicionamiento de las piezas: con la ayuda de la \acs{api} de blenderproc se posicionan todas las piezas de forma aleatoria dentro de un volumen de trabajo. El volumen de trabajo se fija en base a las dimensiones del entorno y la posición y orientación de la pieza se determina de forma aleatoria con el motor de aleatoriedad de numpy.
+\item Posicionamiento de las piezas: con la ayuda de la \acs{api} de BlenderProc se posicionan todas las piezas de forma aleatoria dentro de un volumen de trabajo. El volumen de trabajo se fija en base a las dimensiones del entorno y la posición y orientación de la pieza se determina de forma aleatoria con el motor de aleatoriedad de numpy y BlenderProc.
 \item Simulación física: se ejecuta una simulación física en la que se deja caer las piezas sobre el entorno/zona de trabajo. Se ejecuta el motor hasta que todas las piezas se vuelvan estáticas o se alcance el máximo tiempo de simulación de cuatro segundos.
 \end{itemize}
 
 \item Renderizado: configuración del motor de renderizado, renderizado y escritura de la salida de blender.
 \begin{itemize}
-\item Configuración: dependiendo del tamaño de la pieza se fija la configuración necesaria. Las piezas grandes requieren de una mayor resolución y detalle para la capa de posprocesado que se desarrollará en la \autoref{chap:Generación de un dataset subsec:Postprocesado}.
+\item Configuración: dependiendo del tamaño de la pieza se fija la configuración necesaria.
 \begin{itemize}
 \item Piezas grandes: resolución 3840x2160, 50 muestras y se activa el mapa de normales y de profundidad.
-\item Piezas pequeñas: resolución 1920x1080, 25 muestras y no se requiere de una mapa de normales ni profundidad.
+\item Piezas pequeñas: resolución 1920x1080, 25 muestras.
 \end{itemize}
 \item Renderizado: se activa el proceso o procesos de renderizado dependiendo del tamaño de la pieza.
-\item Salida: se transfiere el resultado de los renderizados del archivo temporal de trabajo de blender al lugar de salida deseado. Para las piezas grandes se guardan también la posición de las piezas respecto a la imagen en un archivo ".txt".
+\item Salida: se transfiere el resultado de los renderizados del archivo temporal de trabajo de blender al lugar de salida deseado.
 \end{itemize}
 \end{enumerate}
 
-Uno de los factores más importantes durante el desarrollo de este sistema es el sesgado. Se debe de evitar que el sistema genere un \textit{dataset} sesgado lo cual implica comprobar y asegurar la aleatoriedad de los resultados obtenidos. Para ello se empleará siempre que sea posible el motor de aleatoriedad de numpy. Este se caracteriza por ser capaz de obtener distribuciones uniformes (la mayor expresión de la aleatoriedad ya que todos los resultados son equitativamente probables).
-
-\begin{figure}[ht]  %Filtrado por color
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/colour.png}
-	\end{minipage}}
-  \hfill	
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/yellow_binario.png}
-	\end{minipage}}
-  \hfill	
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/yellow.png}
-	\end{minipage}}
-  
-  \medskip
-  
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/colour.png}
-	\end{minipage}}
-  \hfill	
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/red_binario.png}
-	\end{minipage}}
-  \hfill	
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/red.png}
-	\end{minipage}}
-	
-  \medskip
-  
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/colour.png}
-	\end{minipage}}
-  \hfill	
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/blue_binario.png}
-	\end{minipage}}
-  \hfill	
-  \subfloat{
-	\begin{minipage}[c][1\width]{0.3\textwidth}
-	   \centering
-	   \includegraphics[width=1\textwidth]{Segmentacion por color/blue.png}
-	\end{minipage}}
-\caption{Filtrado por color}
-\label{fig:colour}
+\begin{figure}[ht]
+\centering
+\begin{tabular}{cccc}
+\includegraphics[width=0.3\textwidth]{Dataset/blender_normal_1.png} &
+\includegraphics[width=0.3\textwidth]{Dataset/blender_normal_2.png} &
+\includegraphics[width=0.3\textwidth]{Dataset/blender_normal_3.png} \\
+Inicio  & Carga del escenario & Carga de piezas  \\[6pt]
+\end{tabular}
+\begin{tabular}{cccc}
+\includegraphics[width=0.3\textwidth]{Dataset/blender_normal_4.png} &
+\includegraphics[width=0.3\textwidth]{Dataset/blender_normal_5.png} &
+\includegraphics[width=0.3\textwidth]{Dataset/blender_aruco_1.png} \\
+Iluminación y cámara  & Configuración normal & Configuración aruco  \\[6pt]
+\end{tabular}
+\begin{tabular}{cccc}
+\includegraphics[width=0.3\textwidth]{Dataset/blender_normal_6.png} &
+\includegraphics[width=0.3\textwidth]{Dataset/blender_aruco_2.png} \\
+Render normal  & Render Aruco  \\[6pt]
+\end{tabular}
+\caption{Proceso de generación de imágenes}
+\label{chap:Generación de un dataset fig:Proceso de generación}
 \end{figure}
 
-\subsubsection*{Posprocesado}
-\label{chap:Generación de un dataset subsec:Posprocesado}
-Desarrollar y explicar en detalle como funciona el sistema de posprocesado.
 
-Pasos par explicar el posprocesado:
-\begin{enumerate}
-\item Procesado para YOLO: e parte de la base de que el entorno de trabajo real estará bien iluminado. Es por ello que se han definido unas condiciones de iluminación fijas y óptimas que permitan reducir las sombras. Originalmente se planteo usar condiciones de iluminación aleatorias pero estas daban lugar a imágenes oscuras en las que apenas se podían distinguir las piezas. El efecto de las sombras se ve incrementado debido a la gran cantidad de piezas que presentas texturas oscuras. Se escoge de forma aleatoria el número de piezas que estarán presentes en la escena (se establecen mínimos y máximos dependiendo del tamaño de la pieza) y se cargan junto con sus texturas dentro de blender. Por último, se define una propiedad \textit{category\_id} que más adelante será usada para identificar las distintas piezas.
-\item Procesado para tiny YOLO
-\item Procesado para Regresor
-\end{enumerate}
+\section{Posprocesado}
+\label{chap:Generación de un dataset sec:Posprocesado}
+El \textit{dataset} deseado debe de contener para cada imagen una lista de todas las piezas presentes asi como su posición y los puntos de agarres disponibles. Esta información no se puede obtener de forma directo con Blender y BlenderProc, es por ello que se ha tenido que desarrollar varios sistemas de posprocesado específicos para cada uno de los componentes de la red neuronal.
+
+\begin{itemize}
+\item Posición (\textit{YOLO}): el primer procesado se caracteriza por ser una simple transformación de la información generada por Blender y BlenderProc a un formato que la red neuronal pueda entender. El generador de imágenes es capaz de crear un archivo de texto conteniendo la posición de las piezas en la imagen y el mapa de segmentación. Sin embargo, estas se encuentran en un formato distinto al empleado por la red neuronal. La transformación empleada consiste en un cambio de origen de la posición de las piezas y en la eliminación del resto de información que no es relevante. El proceso a seguir se muestra a continuación:
+\vspace{5 mm}
+\lstinputlisting[language=Python]{codigo/Prepare_Dataset_YOLO.py}
+\vspace{5 mm}
+
+\item Zonas de interés (\textit{Tiny YOLO}): el segundo procesado debe de determinar para cada piezas las posibles zonas de agarre. Para ello se debe de obtener para cada imagen un recorte de cada pieza presente en la imagen. Y la posición de las zonas de interés de cada recorte. Para llevar a cabo esta tarea se va a emplear la librearía Aruco que se caracteriza por poder detectar códigos QR con precisión, rapidez y eficiencia. El proceso a seguir se muestra a continuación:
+\vspace{5 mm}
+\lstinputlisting[language=Python]{codigo/Prepare_Dataset_TINY_YOLO.py}
+\vspace{5 mm}
+
+\item Vectores normales (Regresor): el objetivo es obtener los vectores normales y el punto de agarre para cada pieza. Por ello la salida en este caso será una imagen individual para cada pieza y un archivo de texto para cada punto de la pieza. En este archivo se almacenarán los centros de cada punto y las coordenadas de su vector normal. El proceso para la obtención de la imagen de cada pieza individual es idéntico al de las zonas de interés. Este posprocesado se caracteriza por el tratamiento de la imagen de normales y la generación de los archivos de texto con la información de cada punto de agarre. El proceso a seguir se muestra a continuación:
+\vspace{5 mm}
+\lstinputlisting[language=Python]{codigo/Prepare_Dataset_Regressor.py}
+\vspace{5 mm}
+
+\end{itemize}
+
+
+\section{Aleatoriedad}
+\label{chap:Generación de un dataset sec:Aleatoriedad}
+Uno de los factores más importantes durante el desarrollo de este sistema es el sesgado. Se debe de evitar que el sistema genere un \textit{dataset} sesgado lo cual implica comprobar y asegurar la aleatoriedad de los resultados obtenidos. Para ello se empleará siempre que sea posible motores de aleatoriedad. Estos se caracterizan por ser capaces de obtener distribuciones uniformes (la mayor expresión de la aleatoriedad ya que todos los resultados son equitativamente probables). Con la excepción del generador de rotaciones aleatorias, ya que debido a la naturaleza de los ángulos de euler la distribución no puede ser uniforme. Durante el proceso de generación de imágenes se emplea un total de tres motores de aleatoriedad. Para asegurar la veracidad de estos tres motores, se ha realizado una serie de pruebas con diferentes semillas y múltiples muestras. A continuación, se muestras los resultados de todos los motores de aleatoriedad empleados.
+
+El primer motor empleado se trata del generador de una distribución uniforme de numpy. Como su nombre indica, se encarga de generar un valor entre los máximos y mínimos establecidos de forma que todos los valores presenten la misma probabilidad. Este método es empleado para determinar el número de piezas que se deben de cargar así como su posición dentro de la zona de trabajo.
+
+El segundo motor empleado es \textit{choice} del paquete \textit{random} de Python. Este se encarga de escoger de forma aleatoria un elemento de una lista. Se debe de asegurar de que todos los elementos presenten la misma probabilidad de ser escogidos. Este método es empleado para determinar que tipo de escenas, piezas y texturas se deben de emplear.
+
+El último motor empleado es \textit{UniformSO3} de BlenderProc. Este se encarga de determinar una rotación aleatoria para las piezas. Esta rotación esta definida por ángulos de euler, es por ello que las distribuciones no deben de ser uniformes. Esto se debe a que una misma posición puede ser alcanzada por diferentes combinaciones de ángulos.
+
+\begin{figure}[ht]
+	\ContinuedFloat
+	\centering
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/numpy_uniform_histogram_10.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/numpy_uniform_histogram_100.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/numpy_uniform_histogram_1000.png}
+	\end{subfigure}
+	\caption{Aleatoriedad de una distribución uniforma generada por numpy}
+	\label{chap:Generación de un dataset fig:numpy uniform}
+	
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/random_choice_histogram_10.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/random_choice_histogram_100.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/random_choice_histogram_1000.png}
+	\end{subfigure}
+	\caption{Aleatoriedad del comando \textit{choice} del paquete \textit{random}}
+	\label{chap:Generación de un dataset fig:random choice}
+	
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/blenderproc_uniformS03_histogram_1.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/blenderproc_uniformS03_histogram_2.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/blenderproc_uniformS03_histogram_3.png}
+	\end{subfigure}
+	\caption{Aleatoriedad de \textit{uniformSO3} del paquete BlenderProc}
+	\label{chap:Generación de un dataset fig:uniformS03}
+\end{figure}
 
 \section{Resultados}
 \label{chap:Generación de un dataset sec:Resultados}
-Mostrar múltiples resultados así como la riqueza del dataset
+Gracias a la implantación de un generador de imágenes se ha conseguido obtener un elevado número de instancias con las que poder entrenar la red neuronal que reflejan en gran medida la realidad. A continuación se muestran algunas de las imágenes obtenidas por es ambos sistemas.
+
+\begin{figure}[ht]
+	\ContinuedFloat
+	\centering
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/Muestra_G1_a_sintetica.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/Muestra_G3_sintetica.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/Muestra_small_sintetica.png}
+	\end{subfigure}
+	\caption{Muestra de imágenes obtenidas mediante el generador de imágenes}
+	\label{chap:Generación de un dataset fig:Muestras BlenderProc}
+
+\end{figure}
+
+Como se ha mencionado previamente, es importante entrenar modelos de redes neuronales con \textit{datasets} no sesgados. Esto implica que antes de entrenar un modelo se debe de analizar los datos para comprobar que se cumplen dichos requisitos. Para ello se han desarrollado una serie de \textit{scripts} en Python que permitirán mostrar el verdadero estado del \textit{dataset}.
+
+Como para el desarrollo de este proyecto se deben de desarrollar tres modelos de redes neuronales, se debe de analizar los datos necesarios correspondiente a cada uno de estos modelos:
+
+\begin{itemize}
+\item \textit{YOLO}: se trata de la primera red neuronal empleada y desarrollada. Se encargará de detectar las piezas dentro de la zona de trabajo y se empleará como base para decidir que pieza se debe de recolectar. La salida de este modelo debe de ser las piezas presentes en la imagen y su posición. Por ello, para poder ser entrenada correctamente se debe de disponer de un número de instancias similares para cada pieza que se desea detectar.
+
+\item \textit{Tiny YOLO}: una red neuronal menor y menos potente pero con una mayor especialización. Esta red se encargará de determinar regiones con posibles puntos de agarre dentro de las piezas (previamente identificadas por \textit{YOLO}). Esta segunda capa es especifica para cada pieza y solo se aplicará a aquellas piezas de elevado volumen. Es por ello que para el análisis de los datos de entrenamiento nos debemos de fijar de forma individual e independiente en cada pieza. En este caso nos vamos a centrar en las piezas G1 y G3 y en el número de instancias de cada zona de interés presente en estas.
+
+\item Regresor: se trata de la última capa del sistema de visión artificial. Se basa en la salida del \textit{Tiny YOLO} y determina para cada una de las posibles regiones de interés el punto de agarre óptimo y su vector normal. Esta última capa es especifica para cada pieza y solo se aplicará a aquellas piezas de elevado volumen. Es por ello que para el análisis de los datos de entrenamiento nos debemos de fijar de forma individual e independiente en cada pieza. Además, al tratarse de un regresor es importante fijarse en la distribución de muestras con el fin de evitar emplear un \textit{dataset} sesgado. En este caso nos vamos a centrar en la pieza G1\_a.
+\end{itemize}
+
+\begin{figure}[ht]
+	\ContinuedFloat
+	\centering
+	\begin{subfigure}[b]{0.9\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/instances_yolo.png}
+	\end{subfigure}
+	\caption{Instancias de cada pieza empleadas para entrenar el modelo basado en YOLO}
+	\label{chap:Generación de un dataset fig:Instancias YOLO}
+	
+	\begin{subfigure}[b]{0.4\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/instances_tiny_yolo_G1_a.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/instances_tiny_yolo_G3.png}
+	\end{subfigure}
+	\caption{Instancias de cada zona de interes empleadas para entrenar el modelo basado en Tiny YOLO}
+	\label{chap:Generación de un dataset fig:Instancias Tiny YOLO}
+	
+	\begin{subfigure}[b]{0.9\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/normal_vector_projection_G1_a.png}
+	\end{subfigure}
+	\caption{Distribución de las proyecciones normales de los puntos de agarre de G1}
+	\label{chap:Generación de un dataset fig:Sesgo G1}
+
+\end{figure}
+
+
+\section{Conclusiones y futuros desarrollos}
+Gracias a los resultados mostrados en el capitulo anterior se puede observar el verdadero potencial del generador de imágenes, pero también se aprecia los fallos y puntos de mejora. El sistema ha demostrado ser una opción viable capaz de representar la realidad de forma fiel. Capaz de mantener una constante aleatoriedad a la vez que asegura la replicación. Y ha demostrado ser un sistema adaptable y escalable capaz de trabajar con cualquier tipo de pieza.
+
+Pero a su vez ha mostrado varios fallos de diseño que se deben a error humano y no del sistema. Desgraciadamente el \textit{dataset} generado no es perfecto ya que presenta un elevado sesgo a pesar de representar en gran medida la realidad. A la hora de desarrollar el sistema se enfoco el proyecto en recrear la realidad en lugar de pensar en que tipo de \textit{dataset} se requiere para entrenar la red neuronal. Y debido a la naturaleza de las piezas la realidad es un escenario sesgado en donde la mayoría de las piezas se encuentran en una posición horizontal.
+
+Para evitar este problema en futuros desarrollos se recomienda la introducción de nuevos escenarios con diferentes geometrías que permitan obtener instancias de las piezas con mayor riqueza y en diferentes posiciones. Este tipo de escenarios no deben de presentar un suelo plano sino que deberán de presentar diferentes elevaciones de forma que al apoyarse las piezas no queden en posición horizontal.

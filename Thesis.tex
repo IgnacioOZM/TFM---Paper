@@ -1,6 +1,8 @@
 \documentclass [11pt,a4paper,twoside,english,spanish]{bmpthesis}
 \addbibresource{References.bib}
 
+\definecolor{redish}{RGB}{255,10,10}
+
 \Author{Ignacio Ortiz de Zúñiga Mingot}
 \Date{July de 2022}
 \Degree{Master universitario en ingeniería industrial}
@@ -13,16 +15,15 @@
 \begin{document}
 
 % Documentos para formalizar el TFM
-%\frontmatter
-%\Frontcover
-%\includepdf{anexoC.pdf}
-%\includepdf{anexoD.pdf}
+\frontmatter
+\Frontcover
+\includepdf{AnexoI.pdf}
 
 \frontmatter
 \Frontcover
 
-%\Dedication{Para todos los que me habéis soportado \\ durante estos largos años de carrera}
-%\input{Acknowledgment.tex}
+\Dedication{Para todos los que me habéis soportado \\ durante estos largos años de carrera}
+\input{Acknowledgment.tex}
 
 \TableOfContents
 \ListOfFigures
@@ -31,18 +32,24 @@
 \Acronyms
 
 % Resumen del proyecto
-%\input{Resumen.tex}
-%\selectlanguage{english}
-%\input{Abstract.tex}
-%\selectlanguage{spanish}
+\input{Resumen.tex}
+\selectlanguage{english}
+\input{Abstract.tex}
+\selectlanguage{spanish}
 
 
 \mainmatter
   \input{Introducción.tex}
   \input{Estado de la cuestion.tex}
   \input{Metodologia de trabajo.tex}
-	\input{Dataset.tex}
+  \input{Dataset.tex}
+  \input{Sistema de visión artificial.tex}
+  \input{Conclusiones.tex}
   \input{ODS.tex}
+
+\appendix  % All chapters below this point will be treated as appendices
+  \input{Estructura YOLOv5.tex}
+  \input{Camara RGBD.tex}
 
 \backmatter 
   \begingroup

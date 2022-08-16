@@ -543,9 +543,9 @@
   \RequirePackage{epsfig}    % Insert .eps figures
 \fi
 
-\RequirePackage[labelformat=simple]{subfig}               % Subfigures
-  \renewcommand\thesubfigure{(\alph{subfigure})}          % Autoreference format
-  \newcommand{\subfigureautorefname}{\figureautorefname}  % (e.g. Figure 1(b))
+%\RequirePackage[labelformat=simple]{subfig}               % Subfigures
+%  \renewcommand\thesubfigure{(\alph{subfigure})}          % Autoreference format
+%  \newcommand{\subfigureautorefname}{\figureautorefname}  % (e.g. Figure 1(b))
   
 \RequirePackage{wrapfig}     % Wrap text around figures
 
@@ -811,14 +811,13 @@
 % Text units
 \renewcommand{\textohm}{\ensuremath{\Omega}}
 
-\RequirePackage[tight,nice]{units}   % Simple units
+%\RequirePackage[tight,nice]{units}   % Simple units
 \RequirePackage{siunitx}             % Advanced units
   \sisetup{
     detect-all,                      % Use the current font and weight
     retain-explicit-plus,            % Display leading plus sign if present
     per-mode         = symbol,       % Use a slash to indicate units in the denominator
     range-phrase     = --,           % Use an en-dash for ranges
-    output-product   = \cdot,        % Use a centered dot for products
     exponent-product = \cdot         % Use a centered dot for scientific notation
   }
   
@@ -832,7 +831,7 @@
   \DeclareSIUnit{\degreeFahrenheit}{\fahrenheit}
   \DeclareSIUnit{\ntu}{NTU}          % Nephelometric Turbidity Unit
   \DeclareSIUnit{\ohm}{\ensuremath{\Omega}}
-  \renewcommand{\SIUnitSymbolMicro}{\ensuremath{\upmu}}
+%  \renewcommand{\SIUnitSymbolMicro}{\ensuremath{\upmu}}
 
 % -----------------------------------------------------------------------------------
 % ----------------------------------- MISCELLANY ------------------------------------
@@ -919,7 +918,7 @@
 % -----------------------------------------------------------------------------------
 
 \RequirePackage{longtable}
-\RequirePackage[only-used = false]{acro} % Acronyms \ac{identificador}
+\RequirePackage{acro} % Acronyms \ac{identificador}
 %\newlist{acronyms}{description}{1}
 %\setlist[acronyms]{labelwidth=3em,leftmargin=3.5em,noitemsep,itemindent=0pt}
 
@@ -939,7 +938,7 @@
     pdfsubject         = \theSubject,
     pdfkeywords        = \theKeywords,
     pdfnewwindow       = true,
-    %colorlinks        = true,  % Cannot be set if menukeys is used
+    colorlinks        = true,  % Cannot be set if menukeys is used
     citecolor          = black,
     filecolor          = black,
     linkcolor          = black,
@@ -954,8 +953,8 @@
 % Keyboard like keys. Must be loaded after hyperref because otherwise there
 % is a clash with the hyperref's colorlinks. In order to preserve hyperref's
 % functionality, the option hyperrefcolorlinks must be set.
-\RequirePackage[hyperrefcolorlinks,os=win]{menukeys}   
-  \renewmenumacro{\directory}[/]{pathswithfolder}
+%\RequirePackage[hyperrefcolorlinks,os=win]{menukeys}   
+%  \renewmenumacro{\directory}[/]{pathswithfolder}
   
   %\usepackage[hyperpageref]{backref}
   %\renewcommand*{\backref}[1]{(see p.~#1)}
@@ -1041,4 +1040,39 @@
 % ------------------------------- USER DEFINED MACROS -------------------------------
 % -----------------------------------------------------------------------------------                                    
 
+
+% Code support
 \RequirePackage{macros}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Subfigure support
+\usepackage{subcaption}
+
+% Lorem ipsum support
+\usepackage{lipsum}

@@ -1,5 +1,11 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {spanish}{}
+\acswitchoff 
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Resumen}{\es@scroman {xv}}{chapter*.8}%
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{\es@scroman {xxi}}{chapter*.10}%
+\babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Estado de la cuestión}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Procesado de la imagen}{5}{section.2.1}%
@@ -14,10 +20,32 @@
 \contentsline {section}{\numberline {3.5}Cronograma}{18}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Generación de un dataset}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Estructura del dataset}{22}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Dataset real}{23}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Dataset sintético}{23}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Herramientas}{23}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Arquitectura del generador de datasets}{24}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Resultados}{27}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Objetivos de desarrollo sostenible}{29}{chapter.5}%
-\contentsline {chapter}{Bibliografía}{31}{section*.19}%
+\contentsline {section}{\numberline {4.2}Herramientas}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Blender}{24}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}BlenderProc}{24}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Aruco}{24}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Arquitectura del generador de datasets}{24}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Posprocesado}{26}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Aleatoriedad}{29}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Resultados}{30}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Conclusiones y futuros desarrollos}{31}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Sistema de visión artificial}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}YOLO}{34}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Estructura}{35}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Entrenamiento}{36}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Resultados}{37}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Tiny YOLO}{42}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Estructura}{42}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Entrenamiento}{42}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Resultados}{43}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Regresor}{47}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Estructura}{47}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Entrenamiento}{48}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Resultados}{49}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Conclusiones y futuros desarrollos}{53}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Sistema de detección de puntos de agarre}{53}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Dataset sintético}{54}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Objetivos de desarrollo sostenible}{55}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Estructura YOLOv5}{57}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Camara RGBD}{59}{appendix.Alph2}%
+\contentsline {chapter}{Bibliografía}{63}{section*.60}%
