@@ -1,120 +1,201 @@
 \FrontmatterChapter{Resumen}
 {\setlength{\parindent}{0pt}
 \begin{Large}
-\textbf{OPTIMIZACIÓN DEL SISTEMA DE VISIÓN ARTIFICIAL DE UN ROBOT INDUSTRIAL PARA UNA APLICACIÓN DE PICK AND PLACE}
+\textbf{SISTEMA DE VISIÓN ARTIFICIAL BASADO EN UN DATASET SINTÉTICO PARA UNA APLICACIÓN DE PICK AND PLACE}
 \end{Large}
 
 \textbf{Autor: Ortiz de Zúñiga Mingot, Ignacio.} \\
-Directores: Boal Martín-Larrauri, Jaime y Rodríguez Mondéjar, José Antonio. \\
-Entidad colaboradora: ICAI – Universidad Pontificia Comillas \\
+Director: Jesús López López, Álvaro \& Rodrigo Tobías, Ignacio de \\
+Entidad colaboradora: Grupo Antolin \\
 
-\section*{Resumen del proyecto}
-En la última década se ha producido revolución industrial conocida como industria 4.0 gracias a los numerosos avances en el sector de la robótica. Este cambio se ha visto producido gracias a que con el desarrollo de los robots se ha conseguido dotar a estos de capacidades para completar tareas previamente imposibles para el ser humano y con un rendimiento y rapidez superior. Es por ello que se decidió implantar dichos sistemas en un robot industrial de Comillas ICAI con el fin de que este sea capaz de recolectar piezas de LEGO dispuestas de forma aleatoria sobre una mesa de trabajo. En este proyecto se parte de este sistema basado en la segmentación clásica y se mejora y actualiza con el desarrollo de sistemas basados en redes neuronales y aprendizaje profundo. Se han desarrollado múltiples redes de diferentes tamaños basadas en R-CNN, Faster R-CNN y YOLO y se camparan entre si y frente al sistema de segmentación clásico. \\
-\textbf{Palabras clave:} Visión artificial, Redes neuronales, AlexNet, VGG-16, R-CNN, Faster R-CNN, YOLO, Robótica, LEGO
+\section*{Introducción}
+El fin de este proyecto es la generación de un nuevo sistema de visión artificial para el reconocimiento de piezas de uso industrial. Este sistema se implantará dentro de una cadena de suministro del Grupo Antolín\textsuperscript{\textregistered} que a su vez alimentará a una linea de montaje y ensamblaje. El sistema deberá de poder identificar múltiples piezas y determinar el punto de agarre óptimo de cada pieza. Este se ve definido por sus coordenadas así como el vector normal a la superficie. De esta forma un brazo robótico con un sistema de agarre por aspiración, ventosa o \textit{soft-robotics} (varía en función de la pieza a coger) podrá recolectarlas. La multitud de herramientas de agarre así como de la necesidad de un sistema de determinación de puntos de agarre se debe a la gran variedad de piezas existentes con formas y tamaños de gran variedad (1-30 cm).\\
+\textbf{Palabras clave:} Visión artificial, Redes neuronales, Regressor, YOLO, Robótica, Linea de ensamblado
 
-\section*{1. Introducción}
-Durante los últimos dos años se ha desarrollado un sistema que dote de visión artificial y autonomía a los robots de Comillas ICAI. La tarea escogida para llevar a cabo con estos robots es la recolección de piezas de LEGO dispuesta de forma aleatoria en una zona de trabajo. Este proyecto surge como la evolución de estos sistemas con el fin de mejorar el subsistema de visión artificial mejorando así las capacidades del robot. Para ello primero se ha mejorado el sistema presente con el desarrollo de nuevos análisis más detallados y precisos. Este sistema se basa en el filtrado con máscaras de color, la detección de bordes y la transformada de Hough. Además, se han desarrollado nuevos sistemas para el cálculo de la profundidad y el cálculo de la orientación de la pieza. Sin embargo, a pesar de estas mejoras se ha observado que este sistema no puede competir con los sistemas más modernos ya implantados en la industria. Es por ello que se han desarrollado nuevos sistemas basados en redes neuronales convolucionales. Tal y como su nombre indica estos se basan en el principio de la convolución y el aprendizaje profundo. Con la ayuda de una base de datos son capaces de extraer las características de un objeto y aprender a identificarlo. Es por ello que se a optado por dotar de esta tecnología a los sistemas previos para mejorarlos y así perfeccionar los.
+\section*{1. Definición del proyecto}
+El objetivo del proyecto en colaboración con el grupo Antolin es la creación de un sistema capaz de automatizar el proceso de elaboración de pedidos. El sistema estará constituido por sistemas de visión y brazos robóticos encargados de elaborar "cestas" con todas las piezas necesarias para montar un pedido el cual será ensamblado por un operario. Gracias a la automatización de la generación de las "cestas" se espera poder reducir el tiempo necesario para la elaboración de los pedidos mejorando así la eficiencia del proceso. El proceso completo se puede dividir en varias etapas:
 
-\section*{2. Metodología}
-El sistema de visión artificial implantado en el brazo robótico esta constituido por tres elementos que deben de cooperar entre si y comunicarse a través de conexiones USB y TCP/IP. La captura de imágenes se realiza con una cámara Intel Realsense D435 que cuenta con sensores RGB y de profundidad y ha sido conectada a través de una conexión USB. El procesado de las imágenes RGB y de profundidad es llevado a cabo por un ordenador con la ayuda de MATLAB. Y por último,se mandarán las instrucciones conteniendo la posición, altura y orientación de cada pieza a través de una conexión TCP/IP al brazo robótico IRB 120. Esta estructura se puede ver en la \autoref{fig:resm1}
+\begin{enumerate}
+\item Generación del pedido: en función de la demanda y de los requisitos del cliente se debe de generar una lista con todos los componentes necesarios para cada pedido.
+\item Estructuración del pedido: Las piezas necesarias se encuentran distribuidas en diferentes secciones y es por ello que se debe de crear un  que determine el orden de recolección de piezas optimo que reduzca el tiempo recolección.
+\item Recolección de piezas: Se trata de un proceso iterativo que se debe de realizar para cada una de las piezas que constituyen el pedido.
+\begin{enumerate}[label*=\arabic*.]
+\item Desplazamiento hasta la pieza. Dependiendo de la configuración del robot este sistema variará, pero el objetivo siempre será el mismo. Trasladar el robot hasta la región donde se encuentra la pieza a recolectar con el fin de poder capturarla y situarla dentro de la región de alcance.
+\item Detección de la pieza: aplicando algoritmos de detección se identificará la pieza que se desea recolectar. Dentro de una misma zona se detectarán numerosas instancias de una misma pieza. Se debe de escoger la pieza/piezas mejor ubicadas y con más probabilidad de éxito.
+\item Punto de agarre: tras detectar la pieza se debe de determinar como se debe de agarrar la pieza. Para ello se debe de determinar el punto de agarre óptimo y el vector normal a dicho.
+\item Recolección de la pieza: se transfiere la información necesaria al robot para que este pueda recolectar la pieza a través del punto de agarre definido. El sistema de agarre a emplear dependerá del tpo de pieza.
+\item Deposición y control de calidad: por último se debe de depositar la pieza dentro de la cesta que constituye el pedido. Y mediante el sistema de visión artificial se debe de comprobar que la pieza deseada ha sido correctamente depositada en la cesta.
+\end{enumerate}
+\item Control de calidad y trazabilidad: antes de dar por finalizado en pedido se analiza por última vez para comprobar que todas las piezas necesarias se encuentran dentro de la cesta. Se registra en el sistema el pedido y toda la información necesaria para futura trazabilidad.
+\item Traslado del pedido: una vez se da por finalizado el pedido este se debe de trasladar hasta la zona de ensamblaje para comenzar el proceso de montado.
+\end{enumerate}
 
-%\begin{figure}[ht]
-%	\centering
-%	\includegraphics[width=0.9\textwidth]{Introduccion/Esquema_arquitectura.pdf}
-%	\caption{Esquema de la arquitectura del sistema}
-%	\label{fig:resm1}
-%	\vspace{-5pt}
-%\end{figure}
+En este proyecto nos centraremos unicamente en el desarrollo de una herramienta/sistema de visión artificial que permitirá la detección de la pieza así como la definición del punto de agarre y el vector normal a este. Este sistema se implantará para llevar a cabo la etapa 3.2 así como 3.3. El sistema también puede ser usado en las etapas 3.5 y 4 para llevar acabo las tareas de control de calidad y trazabilidad.
 
-El primer paso en el desarrollo de este proyecto ha sido la mejora el sistema actual basado en filtros con máscaras de color, la detección de bordes y la transformada de Hough. Se han revisado los filtros de color reduciendo así los falsos positivos y se ha perfeccionado el análisis por detección de bordes de las piezas. Se ha rediseñado y calibrado la cámara para permitir una captura más rápida y eliminar las distorsiones presentes en la imagen de profundidad. También se ha rediseñado el sistema de cálculo de la orientación con el desarrollo de un análisis más exhaustivo de todas las caras de las piezas de LEGO mediante la transformada de Hough.
+El sistema estará constituido por dos elementos que trabajarán en armonía. Un generador de imágenes capaz crear imágenes de las piezas en un entorno de trabajo así como de obtener la información necesaria de la posición de cada pieza, los puntos de agarre y sus vectores de agarre. Y un sistema de visión artificial basada en redes convolucionales y un regresor para la predicción del punto de agarre óptimo de cada pieza.
 
-Una vez este sistema ha sido mejorado y perfeccionado, se ha desarrollado desde cero nuevos detectores de objetos basados en redes neuronales convolucionales. Con el fin de poder realizar un análisis riguroso de estas redes y poder seleccionar un buen método o combinación de métodos a emplear, se han desarrollado múltiples redes de diferentes tamaños y basadas en diferentes tecnologías. Las redes desarrolladas son del tipo: tipo R-CNN, Faster R-CNN y YOLO. Y para cada tipo de tecnología se han creado dos redes basadas en clasificadores reentrenados basados en AlexNet y VGG-16.
+\section*{2. Descripción del sistema}
+Debido a la necesidad de establecer el punto de agarre óptimo a cada pieza el sistema debe de crecer en complejidad lo cual implica que el \textit{dataset} empleado debe de hacerlo en la misma medida. Se desea tener para cada pieza un elevado número de imágenes con las que poder entrenar tanto a YOLO como a TINY YOLO. Pero además, se desea saber para cada una de las regiones marcadas para TINY YOLO se debe de saber las coordenadas del punto de agarre y su vector normal. Extraer esta información de forma manual es un proceso complejo y con un coste de tiempo elevado. Sobretodo si se considera que idealmente se debe de obtener miles de instancias de cada pieza para entrenar las redes neuronales.
 
-Para poder llevar esto a cabo es necesario primero rediseñar y reentrenar los clasificadores antes de poder crear los detectores de objetos. El motivo por el que se ha llevado a cabo este paso es que es común y altamente recomendable a la hora de desarrollar un detector de objetos, que este sea basado en un clasificador. Este proceso es conocido como aprendizaje por transferencia y ayuda a reducir el tiempo de entrenamiento y el número de datos necesarios a la vez que mejora los resultados. Es por ello que en este proyecto se ha decidido emplear el aprendizaje por transferencia partiendo de dos clasificadores diferentes. Los clasificadores empleados son AlexNet y VGG-16, sin embargo, estos clasificadores no han sido entrenados para la identificación de piezas de LEGO. Es por ello que primero serán reentrenados para la identificación de dichas piezas. Y a continuación, se partirá de estos dos nuevos clasificadores bautizados como LEGONet y LEGO16 para el desarrollo de los detectores de objetos mencionados previamente. Es decir, dos redes del tipo R-CNN, dos del tipo Faster R-CNN y dos del tipo YOLO.
+Por este motivo se ha optado por emplear un generador de imágenes basado en la herramienta de renderizado Blender y en la extensión BlenderProc. La extensión es un \textit{pipeline} desarrollado por DLR-RM con el fin simplificar el proceso de generación de \textit{datasets} de imágenes para entrenar redes convolucionales \citep{denninger2019blenderproc}. Se caracteriza por centrarse en la modularidad al dotar a blender con las herramientas necesarias para generar escenas fotorealistas y de forma aleatoria pero manteniendo una estructura modular que permite adaptarse al problema.
 
-R-CNN surgió como evolución de los primeros detectores de objetos basados en ventanas flotantes. Esta red primero analiza la imagen y determina aproximadamente 2000 regiones de interés para que estas sean analizadas de forma independiente por un clasificador. Con este sistema se redujo los tiempos de ejecución frente a los previos sistemas, pero sigue siendo un sistema lento ya que debe de analizar cada sección por separado. A cambio de un mal rendimiento, se caracteriza por ser uno de los sistemas más precisos y capaces. Durante el desarrollo de este proyecto se han desarrollado dos redes tipo R-CNN basadas en LEGONet y LEGO16. Estas redes han sido entrenadas con una base de datos desarrollada por nosotros y se han realizado múltiples pruebas con el fin de determinar las mejores opciones de entrenamiento.
+Con la ayuda de BlenderProc se ha creado un sistema de generación de imágenes basado en dos partes. En una primera instancia se genera dos escenas idénticas salvo por la excepción de las piezas usadas. En la primera imagen se muestra cada una de las piezas con sus texturas originales. En la segunda se emplea una pieza con una textura modificada con la inserción de códigos QR que más adelante se emplearán para extraer la información restante. A continuación, se muestro el proceso de generación de imágenes:
 
-Faster R-CNN surge tres años después de R-CNN como una evolución del mismo. Al igual que R-CNN se basa en la propuesta de regiones pero este proceso es llevado a cabo por una red RPN, una red neuronal convolucional cuya salida son las regiones de interés. Esta red se basa en la información extraída por las primeras capas del clasificador. El análisis de las regiones de interés también se lleva a cabo con el resto del clasificador y de forma independiente. En este sistema no se tiene que analizar la imagen original tantas veces como regiones propuestas sino que solo se analizan las regiones de interés extraídas de las capas de convolución iniciales. Y es por ello que se consigue reducir los tiempos de ejecución. Durante el desarrollo de este proyecto se han desarrollado dos redes tipo Faster R-CNN basadas en LEGONet y LEGO16. Estas redes han sido entrenadas con una base de datos desarrollada por nosotros y se han realizado múltiples pruebas con el fin de determinar las mejores opciones de entrenamiento.
+\begin{enumerate}
+\item Escena: Carga del entorno, de las piezas, la iluminación y la cámara. Durante todo este proceso se han empleado motores de aleatoriedad de forma que el escenario, el tipo de piezas y el número de piezas cargadas sea aleatorio. Por último, se carga la cámara y se fijan sus hiperparámetros con el fin de asemejarla a la cámara empleada durante las pruebas.
 
-YOLO es uno de los sistemas más modernos y actuales empleados para la detección de objetos. Se caracteriza por su rapidez de entrenamiento y de ejecución. Esto se debe a que tal y como su nombre indica, \textit{You Only Look Once}, es un tipo de red en la que la imagen solo se analiza una vez. Y mediante el uso de de un sistema de predicción de \textit{bounding boxes} determina los objetos presentes en la imagen. Este sistema se caracteriza porque a diferencia de los sistemas mencionados anteriormente, es capaz de ver toda la imagen a la vez y por ello puede establecer relaciones entre \textit{bounding boxes}.. Durante el desarrollo de este proyecto se han desarrollado dos redes tipo YOLO basadas en LEGONet y LEGO16. Estas redes han sido entrenadas con una base de datos desarrollada por nosotros y se han realizado múltiples pruebas con el fin de determinar las mejores opciones de entrenamiento.
+\item Simulación: activación de las piezas de forma que pasen a formar parte de la simulación y puedan interactuar con el entorno, posicionamiento aleatorio de las piezas y simulación física. De esta forma se consigue crear escenarios aleatorios donde las piezas siempre se encuentran en posiciones realistas y dentro de la zona de trabajo.
 
-Una vez identificadas todas las piezas mediante el uso de los detectores de objetos, es necesario calcular su orientación y altura. Este proceso ya ha sido perfeccionado al principio del proyecto. La información obtenida con todos estos análisis es mandada al brazo robótico y las piezas detectadas son recolectadas.
+\item Renderizado: configuración de los motores de renderizado y escritura de la salida de blender. La configuración empleada en este proceso dependerá del tipo de pieza presente en la escena.
+\end{enumerate}
 
-Como desarrollo adicional del proyecto, se ha decidido crear dos modelos de regresión basados en LEGONet y LEGO16 con el fin de estimar la orientación de una pieza de LEGO. Para el desarrollo de estas redes se ha preparado una nueva base de datos desarrollada por nosotros y constituida por miles de imágenes de piezas de LEGO rotadas diferentes ángulos. Para el entrenamiento también se han llevado a cabo múltiples pruebas con el objetivo de encontrar las mejores opciones de entrenamiento.
+Una vez se ha generado el conjunto de imágenes deseadas, estas deben de ser tratadas para extraer la información necesaria y darle a la información un formato que pueda ser aceptado y procesado por las redes neuronales. El proceso de postprocesado se divide en las tres siguientes etapas:
+
+\begin{itemize}
+\item Posición (\textit{YOLO}): el primer procesado se caracteriza por ser una simple transformación de la información generada por Blender y BlenderProc a un formato que la red neuronal pueda entender. La transformación empleada consiste en un cambio de origen de la posición de las piezas y en la eliminación del resto de información que no es relevante al problema.
+
+\item Zonas de interés (\textit{Tiny YOLO}): el segundo procesado debe de determinar para cada piezas las posibles zonas de agarre. Para ello se debe de obtener para cada imagen un recorte de cada pieza presente en la imagen. Y la posición de las zonas de interés de cada recorte. Para llevar a cabo esta tarea se va a emplear la librearía Aruco que se caracteriza por poder detectar códigos QR con precisión, rapidez y eficiencia.
+
+\item Vectores normales (Regresor): el objetivo es obtener los vectores normales y el punto de agarre para cada pieza. Por ello la salida en este caso será una imagen individual para cada pieza y un archivo de texto para cada punto de la pieza. En este archivo se almacenarán los centros de cada punto y las coordenadas de su vector normal. El proceso para la obtención de la imagen de cada pieza individual es idéntico al de las zonas de interés. Este posprocesado se caracteriza por el tratamiento de la imagen de normales y la generación de los archivos de texto con la información de cada punto de agarre.
+\end{itemize}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Dataset/Arquitectura generador.pdf}
+	\caption{Esquema de la arquitectura del generador de imágenes}
+	\label{chap:Resumen fig:Arquitectura generador}
+	\vspace{-5pt}
+\end{figure}
+
+Una vez desarrollado el \textit{dataset} necesario para llevar acabo este proyecto se puede introducir la solución desarrollada. Debido a la complejidad de la salida deseada (detección de la pieza y puntos de agarre) ha sido necesario desarrollar un sistema complejo compuesto por tres redes neuronales:
+
+\begin{itemize}
+\item \textit{YOLO}: se trata de la primera red neuronal empleada y desarrollada. Se encargará de detectar las piezas dentro de la zona de trabajo y se empleará como base para decidir que pieza se debe de recolectar. Es la única capa común a todas las piezas.
+
+Con el fin de obtener los mejores resultados posibles se ha optado por emplear el proceso evolutivo de YOLO. Se trata de un proceso iterativo en el que en base a una función objetivo se van seleccionando los hiperparámetros de entrenamiento con el fin de optimizar el entrenamiento. Estos nuevos hiperparámetros se obtienen por medio de un algoritmo genético, de forma que los mejores resultados de la anterior iteración se emplearán como base para la creación de nuevos hiperparámetros. La función objetivo empleada se caracteriza por ser una combinación de $mAP@0.5$ con una contribución del 10\% y $mAP@0.5:0.95$ con una contribución del 90\%.
+
+\begin{lstlisting}[language=Python]
+ def fitness(x): 
+     # Model fitness as a weighted combination of metrics 
+     w = [0.0, 0.0, 0.1, 0.9]  # weights for [P, R, mAP@0.5, mAP@0.5:0.95] 
+     return (x[:, :4] * w).sum(1) 
+\end{lstlisting}
+
+\item \textit{Tiny YOLO}: una red neuronal menor y menos potente pero con una mayor especialización. Esta red se encargará de determinar regiones con posibles puntos de agarre dentro de las piezas (previamente identificadas por \textit{YOLO}). Esta segunda capa es especifica para cada pieza y solo se aplicará a aquellas piezas de elevado volumen.
+
+Esta segunda red neuronal se deberá de entrenar tantas veces como piezas de desee introducir al sistema. Es por ello que la carga computacional debe de ser reducida para evitar crear un sistema lento y poco eficiente. Por suerte, debido a la gran especialización de la red, solo debe de detectar regiones para un tipo de pieza, por ello se puede emplear la versión de YOLO de menor tamaño. La principal ventaja de YOLOv5 es el uso de recursos tanto a nivel computacional como de almacenamiento. La red ocupa 4 MB y cuenta con un total de 1.9 millones de neuronas. Pero a pesar de su reducido tamaño es capaz de lograr resultados sorprendentes capaces de competir con potentes y pesadas redes basadas en Fast-RCNN.
+
+\item Regresor: se trata de la última capa del sistema de visión artificial. Se basa en la salida del \textit{Tiny YOLO} y determina para cada una de las posibles regiones de interés el punto de agarre óptimo y su vector normal. Esta última capa es especifica para cada pieza y solo se aplicará a aquellas piezas de elevado volumen.
+
+El desarrollo de una red neuronal es un proceso laborioso que requiere de múltiples pruebas e intentos con el fin de conseguir desarrollar un sistema que aprenda y de forma optimizada. Es por ello por lo que se han tenido que desarrollar y entrenar múltiples redes para dar con un sistema óptimo. El primer paso en el desarrollo de la red ha sido comparar el impacto de diferentes tamaños de redes. Se han comparado redes con tres, cinco y siete capas convolucionales para determinar el número de capas necesarias para poder extraer las características. A continuación, se analiza el impacto del tamaño y profundidad de las redes \textit{fully connected}. A continuación, se comparan diferentes funciones de activación, diferentes criterios y optimizadores. Se observa en los resultados que la red sufre por sobreaprendizaje, es por ello que finalmente se implantan capas \textit{dropout}.
+\end{itemize}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Sistema de vision artificial/REGRESSION/CNNRegression.png}
+	\caption{Estructura del regresor}
+	\label{chap:Resumen fig:Estructura Regresor}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Sistema de vision artificial/Diagrama_vision.png}
+	\caption{Esquema de la arquitectura del sistema de visión artificial}
+	\label{chap:Resumen fig:Arquitectura sistema}
+\end{figure}
 
 \section*{3. Resultados}
-\subsection*{Detectores de objetos}
-Tras desarrollar y entrenar todos los sistemas para la detección de objetos, se ha llevado a cabo una comparativa enfrentado los entre sí y frente a la versión mejorada del sistema clásico. Para la evaluación se han analizado un total de 380 piezas de LEGO de diferentes colores y en diferentes escenas. Con la evaluación se han llevado a cabo múltiples mediadas para evaluar el comportamiento de cada sistema.
+Como se ha explicado anteriormente el sistema consta de dos elementos, el generador de imágenes y el sistema de visión artificial. Y a su vez estos son constituidos por múltiples módulos. Pero para poder analizar el comportamiento de estos se deben de analizar por separado y al conjunto.
 
-\subsubsection*{Precisión, Exhaustividad, Tasa de fallos y FPPI}
-Como se ha mencionado anteriormente, se han medido diferentes parámetros para evaluar el comportamiento de cada sistema. La precisión indica el nivel de similitud entre la detección de cada método y la verdadera región en la que se encuentra la pieza. La exhaustividad determina la relación entre los verdaderos positivos y los falsos negativos. La tasa de fallos determina la probabilidad de no detectar una de las piezas de LEGO. Y FPPI representa el número de falsos positivos por imagen detectadas. Tras evaluar todos los sistemas desarrollados, se puede observar la clara superioridad de las redes neuronales. Los nuevos sistemas son capaces de detectar piezas de LEGO bajo diferentes escenarios y condiciones lumínicas. Además, han reducido notablemente el número de falsos positivos y la tasa de fallo. Y entre ellos destaca R-CNN por su precisión y YOLO. Este último destaca más si se tiene en cuenta su menor tiempo de ejecución. A continuación, se muestran los resultado al evaluar las piezas LEGO de color rojo en la \autoref{fig:resm2}.
+El generador de imágenes debe de cumplir dos requisitos, los escenarios creados deben de ser aleatorios y las imágenes tienen que ser foto realistas. El segundo objetivo se consigue con creces gracias al uso de blender y a mapas de texturas de alta calidad. Por lo tanto nos debemos de fijar en mantener la aleatoriedad al crear las escenas. Para ello se han usado tres motores de aleatoriedad: numpy, random y uniformSO3 de Blenderproc. Y todos los motores son capaces de generar uniformidad aunque cabe destacar que uniformS03 se empleará para la generación de las posiciones y estas al emplear ángulos de euler se debe de emplear una distribución diferente.
 
-%\begin{figure}[ht]  %Estudio Azul
-%\vspace{-10pt}
-%  \subfloat{
-%	\begin{minipage}[c][1\width]{0.49\textwidth}
-%	   \centering
-%	   \includegraphics[width=1\textwidth]{Resultados/precision red.png}
-%	\end{minipage}}
-%  \hfill	
-%  \subfloat{
-%	\begin{minipage}[c][1\width]{0.49\textwidth}
-%	   \centering
-%	   \includegraphics[width=1\textwidth]{Resultados/miss blue.png}
-%	\end{minipage}}
-%\caption{Comparativa de los métodos de segmentación al detectar piezas rojas}
-%\label{fig:resm2}
-%\end{figure}
+\begin{figure}[ht]
+	\ContinuedFloat
+	\centering
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/Muestra_G1_a_sintetica.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/Muestra_G3_sintetica.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/Muestra_small_sintetica.png}
+	\end{subfigure}
+	\caption{Muestra de imágenes obtenidas mediante el generador de imágenes}
+	\label{chap:Resumen fig:Muestras BlenderProc}
+\end{figure}
 
-\subsubsection*{Velocidad}
-Otro factor importante de considerar a la hora de implantar un sistema es el tiempo de ejecución. Por ello durante la evaluación también se han medido los tiempos de ejecución de cada sistema. Con el fin de reflejar las diferencias en ejecución de cada sistema, las medidas han sida transformadas de décimas de segundo a imágenes por segundo. Como se puede observar, las nuevas redes neuronales no solo destacan por dar mejores resultados sino que también son más rápidas. A excepción de R-CNN cuyo rendimiento es similar al sistema clásico. Las redes que más destacan son las basadas en YOLO ya que su rendimiento es claramente superior rompiendo siempre la barrera de las 30 imágenes por segundo e incluso rompiendo la de los 60 en el caso de YOLO basado en LEGONet.
+\begin{figure}[ht]
+	\ContinuedFloat
+	\centering
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/numpy_uniform_histogram_1000.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/random_choice_histogram_1000.png}
+	\end{subfigure}
+	\caption{Aleatoriedad de una distribución uniforme generada por NumPy y Random}
+	\label{chap:Resumen fig:numpy and random uniform}
+	
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/blenderproc_uniformS03_histogram_1.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/blenderproc_uniformS03_histogram_2.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{Dataset/blenderproc_uniformS03_histogram_3.png}
+	\end{subfigure}
+	\caption{Aleatoriedad de \textit{uniformSO3} del paquete BlenderProc}
+	\label{chap:Resumen fig:uniformS03}
+\end{figure}
 
-%\begin{figure}[ht]  %Cajas velocidad
-%\vspace{-10pt}
-%	\centering
-%	\includegraphics[width=1\textwidth]{Resultados/detectores cajas.png}
-%	\caption{Diagrama de cajas: Comparación de la velocidad de diferentes métodos para la segmentación (más arriba es mejor)}
-%	\label{fig:resm3}
-%\end{figure}
+El segundo elemento que constituye el sistema es el conjunto de redes neuronales que componen el sistema de visión artificial. Como se ha explicado, esta compuesta por un total de tres redes y dependiendo del tipo de piezas se empleará una u todas las redes.
 
-\subsection*{Análisis de la orientación}
-También se ha llevado a cabo una evaluación de los sistemas desarrollados para el cálculo de la orientación. Es decir, el sistema clásico basado en detección de bordes y la transformada de Hough y los dos modelos de regresión basados en LEGONet y LEGO16. En el caso de estos sistemas, en la evaluación se han medido los errores medios, el error máximo, la desviación típica y la velocidad de cada sistema. De nuevo, la velocidad se ha medido en piezas de LEGO por segundo ya que refleja mejor la capacidad de cada sistema.
+La primera red a entrenar es YOLO. Una vez completado el proceso evolutivo se han entrenado dos versiones de YOLO con diferentes hiperparámetros. En ambos casos se observa como la red neuronal es capaz de generalizar y extraer la información y características de las piezas. Pero también se observa la falta de entrenamiento ya que las métricas siguen mejorando cuando se detuvo el entrenamiento. Pero a pesar de ello se puede observar el gran rendimiento y capacidades de YOLO. También se observa una clara mejora al emplear los hiperparámetros obtenidos por el algoritmo evolutivo tanto en entrenamiento como en validación.
 
-%\begin{table}[ht] %tabla orientación precision
-%  \centering
-%    \begin{tabular}{|l|r|r|r|}
-%    \cline{2-4} \multicolumn{1}{r|}{} & \multicolumn{1}{l|}{Transformada de Hough} & \multicolumn{1}{l|}{LEGONet} & \multicolumn{1}{l|}{LEGO16}\\	
-%    \hline
-%    Error medio & 0.98$^{\circ}$  & 0.33$^{\circ}$ & 0.71$^{\circ}$ \\
-%    \hline
-%    Error máximo & 26$^{\circ}$  & 1.3$^{\circ}$ & 16$^{\circ}$ \\
-%    \hline
-%    Precisión & 83.67\% & 97.67\% & 79.33\% \\
-%    \hline
-%    Desviación típica & 1.82$^{\circ}$ & 0.43$^{\circ}$ & 1.23$^{\circ}$ \\
-%    \hline
-%    Piezas por segundo	&	89.7	&	74.6	&	178.5	\\
-%    \hline
-%    \end{tabular}%
-%  \label{tab:resm4}%
-%  \caption{Comparación del error medio, error máximo, precisión, desviación típica y velocidad de diferentes métodos para el cálculo de la orientación}
-%\end{table}
+Por último, se ha obtenido la precisión y el \textit{recall} de validación (ver \autoref{chap:Sistema de visión artificial fig:YOLO Val PR}). Con la precisión se observa como con un nivel de confianza del 40\% se pueden obtener resultados con una precisión elevada. Y con \textit{recall} se observa como ha medida que aumentamos el nivel de confianza requerido aumenta el numero de falsos negativos (piezas no detectadas). Se han obtenido unos resultados prometedores (ver \autoref{chap:Sistema de visión artificial fig:YOLO Val Matrix}) caracterizados por una tasa de fallos reducida y una precisión elevada para niveles de confianza del 50\%. Los resultados son prometedores pero esto no implica que sean perfectos. La red presenta una clara ligera tendencia a dar falsos positivos a la hora de detectar algunas de las piezas.
 
-%\begin{figure}[ht]  %Cajas orientación precision
-%	\centering
-%	\includegraphics[width=0.95\textwidth]{Resultados/orientacion precision cajas.png}
-%	\caption{Diagrama de cajas: Comparación de la precisión de diferentes métodos para el cálculo de la orientación (cuanto más centrado respecto al cero y menos disperso mejor)}
-%	\label{fig:resm5}
-%\end{figure}
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.45\textwidth]{Sistema de vision artificial/YOLO/Val/P_curve.png} \hfill
+    \includegraphics[width=0.45\textwidth]{Sistema de vision artificial/YOLO/Val/R_curve.png}
+	\caption{\textit{Precision y Recall} en validación de YOLO}
+	\label{chap:Resumen fig:YOLO Val PR}
+\end{figure}
+
+La segunda red a entrenar es TINY YOLO. Tras entrenar durante un total de 250 \textit{epochs} se puede observar que la red neuronal ha conseguido aprender, extraer y generalizar la información disponible en el \textit{dataset}.Con lo que se ha podido reducir drásticamente las perdidas (\textit{object, class \& box}) tanto en entrenamiento como en validación. En este entrenamiento se puede apreciar que a pesar de ser un caso más simple, con un a red de menor tamaño y un mayor número de \textit{epochs}, la red todavía presenta un margen de mejora.
+
+Tras finalizar el entrenamiento, se ha obtenido la precisión y el \textit{recall} en validación. Con la precisión se observa como con un nivel de confianza del 80\% se pueden obtener resultados con una precisión elevada y similares a la red YOLO con un nivel de confianza del 40\%. Esta reducción de precision frente a YOLO se puede deber a varios factores como el menor tamaño de red. El tipo de pieza a emplear, las regiones de interés no presentan bordes claramente definidos. O el tamaño de las piezas, debido al uso de Arucos de forma que todas las regiones son idénticas en tamaño y forma.
+
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.45\textwidth]{Sistema de vision artificial/TINY YOLO/Val/P_curve.png} \hfill
+    \includegraphics[width=0.45\textwidth]{Sistema de vision artificial/TINY YOLO/Val/R_curve.png}
+	\caption{\textit{Precision y Recall} en validación de TINY YOLO}
+	\label{chap:Resumen fig:TINY YOLO Val PR}
+\end{figure}
+
+La última red a entrenar es el regresor. Esta tercera red neuronal se deberá de entrenar tantas veces como puntos de desee introducir al sistema. Es por ello que la carga computacional debe de ser reducida para evitar crear un sistema lento y poco eficiente. Teniendo esto en cuenta se ha desarrollado una red neuronal dividida en dos secciones, una primera sección basada en la convolución y encargada de extraer las características de la pieza. Y una segunda sección del tipo \textit{fully connected} basada en perceptrones que se encargarán de estimar las coordenadas y el vector normal del punto de agarre.
+
+Destaca con los mejores resultados la red con el mayor número de capas de convolución y sin capas \textit{Dropout}. Y con este tipo de red se consigue obtener un error entorno al 5\% en validación para los vectores normales y entorno al 1-2\% para la determinación del punto de agarre. También destaca en esta red los errores de validación de los vectores normales donde a pesar del entrenamiento se dan situaciones en donde los resultados obtenidos empeoran al aumentar el entrenamiento. Esto se debe a una combinación de sobreaprendizaje junto un la utilización de un \textit{dataset} sesgado. Esto conlleva a la red a asumir las posiciones de los vectores normales y es por ello por lo que aumenta el error total a pesar del entrenamiento.
+
+\begin{figure}[ht]
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.6\textwidth]{Sistema de vision artificial/REGRESSION/val_loss.png} &
+\includegraphics[width=0.2\textwidth]{Sistema de vision artificial/REGRESSION/legend.png}
+\end{tabular}
+\caption{Comparativa de las fases de validación del regresor}
+\label{chap:Resumen fig:Validación Regresor}
+\end{figure}
 
 \section*{4. Conclusiones}
-El objetivo final de este proyecto es el perfeccionamiento del sistema previamente desarrollado por Ana Berjón Valles \citep{TFGAna} mejorando la capacidad de reconocimiento. Todos los objetivos planteados durante el desarrollo del proyecto se han podido llevar a cabo y se ha mejorado en su totalidad el sistema. A continuación, se va desarrollar más en detalle los objetivos cumplidos.
+El desarrollo de este proyecto se caracteriza por cumplir dos grandes objetivos/metas. En primer lugar, su desarrollo ha permitido la creación de un sistema basado en redes neuronales capaz de identificar piezas y sus puntos de agarre óptimos. Y en segundo lugar ha permitido comprobar las capacidades de aprendizaje de una red neuronal al emplear un \textit{dataset} sintético. Es por ello que se debe de analizar el sistema desde las dos perspectivas.
 
-Uno de los principales objetivos consiste en subsidiar los problemas del sistema antiguo ante cambios de iluminación. Como el sistema clásico se basa puramente en filtros de color y detección de borde, se ve notablemente afectado por cambios en la iluminación. Falta comprobar el funcionamiento de los sistemas desarrollados durante este proyecto en el laboratorio, pero con los resultados obtenidos durante la evaluación de estos se considera que este problema ya ha sido solventado y mitigado. Dados los resultados se recomienda para futuros proyectos la implantación del sistema basado en YOLO con LEGO16 y el modelo de regresión basado en LEGONet. También es recomendable plantearse el uso de un sistema combinado con varias redes neuronales.
+Para el desarrollo del sistema de identificación de puntos de agarre se ha tenido que desarrollar un \textit{dataset} sintético que refleje la realidad y permita aumentar el número de imágenes para el entrenamiento. Durante el desarrollo de este sistema se presto especial atención en representar lo mejor posible la realidad y el entorno de trabajo. De esta forma varios de los escenarios y de las configuraciones usadas se limitan a representar los escenarios observados en la planta de ensamblaje. Esta decisión desgraciadamente ha conllevado la generación de un \textit{dataset} sesgado en donde la mayoría de las piezas se encuentran en una posición predefinida por el escenario. Es por ello por lo que se recomienda mejorar la aleatoriedad del sistema introduciendo mas escenarios que a pesar de que no reflejen la realidad si permitan la obtención de imágenes con mayor riqueza y eviten el sesgado del la red.
 
-Otra gran limitación del sistema anterior era los fallos debidos al análisis de profundidad. Debido al tipo de tecnología empleada para detectar la profundidad, esta se ve bastante afectada por los reflejos de las luces del laboratorio sobre las piezas de LEGO. Este problema ha podido ser solventado mediante la modificación del sistema de análisis de profundidad. Se ha introducido la posibilidad de calibrar rápidamente la cámara para poder tomar referencias de alturas. Además, se ha repartido el área de trabajo en secciones y se ha calculado la profundidad de dichas secciones con la mediana y teniendo en cuenta el entorno a la sección. De esta forma se mitiga el efecto de los reflejos.
+El nuevo sistema de visión artificial ha conseguido obtener el punto de agarre óptimo para las piezas grandes y se ha asumido el centro de las piezas pequeñas como un buen punto de agarre. En base a los resultados obtenidos en la fase de validación, el sistema se muestra capaz con errores pequeños y pocos \textit{outliers}. Desgraciadamente el comportamiento de las redes solo se ha podido analizar frente a un \textit{dataset} sintético pero no frente a una situación real. Para determinar con precisión el alcance y la capacidad del sistema se requiere de un \textit{dataset} real.
 
-Generalización de los algoritmos empleados. Durante el desarrollo del proyecto se ha tenido en cuenta este objetivo y es por ello que todo el procesado de la imagen no depende de la cámara, del brazo ni del laboratorio. La cámara ha sido tratada como una clase y el proceso de segmentación ya no depende tanto del calibrado de color de la cámara empleada. Además, con el procesado de la imagen de profundidad se ha creado un sistema fácil de calibrar y reutilizar para diferentes circunstancias. Esto implica que este sistema puede ser reutilizado para el reconocimiento de diferentes piezas, con diferentes cámaras y diferentes puntos de trabajo. Todo proceso que involucre al brazo robótico es llevado a cabo en forma de funciones, por ello solo modificando estas se puede implantar el sistema en cualquier otro brazo robótico del laboratorio.
-
-Analizando el proyecto de forma global, este nuevo sistema supone un gran avance frente al anterior sistema y una vez sea implantado supondrá una gran mejora en la tecnología y capacidades de los robots industriales de Comillas ICAI.
+Pero esta falta de un \textit{dataset} real no impide que se pueda analizar la estructura del sistema y se planteen puntos de mejora. La red presenta grandes puntos fuertes como su modularidad. La cual permite la inclusión de nuevas piezas sin afectar al rendimiento de las ya implementadas y sin la necesidad de entrenar toda la red frente a un \textit{dataset} con todas las piezas. Esto mejora los resultados a la vez que se reduce el tiempo de entrenamiento para nuevas piezas. Por el contrario, esta modularidad implica una perdida de eficiencia al tener que analizar múltiples veces una misma escena. Se plantea a futuro la posibilidad de desarrollar una única red que a su vez presente un formato modular para adaptarse a cada pieza. Pero al tratarse de una sola red se podrá realizar todo el proceso con un solo análisis.  
 }

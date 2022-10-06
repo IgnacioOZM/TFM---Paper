@@ -2484,10 +2484,6 @@ INPUT ./Thesis.lof
 INPUT Thesis.lof
 INPUT Thesis.lof
 OUTPUT Thesis.lof
-INPUT ./Thesis.lot
-INPUT Thesis.lot
-INPUT Thesis.lot
-OUTPUT Thesis.lot
 INPUT ./Resumen.tex
 INPUT Resumen.tex
 INPUT ./Resumen.tex
@@ -2500,15 +2496,179 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchb8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchb8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchb8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm
-INPUT ./Abstract.tex
-INPUT Abstract.tex
-INPUT ./Abstract.tex
-INPUT Abstract.tex
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchr8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8r.tfm
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
+INPUT ./Abstract.tex
+INPUT Abstract.tex
+INPUT ./Abstract.tex
+INPUT Abstract.tex
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT ./images//Dataset/Arquitectura generador.pdf
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_G3_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/Muestra_small_sintetica.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/random_choice_histogram_1000.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
+INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
 INPUT ./Introducción.tex
 INPUT Introducción.tex
 INPUT ./Introducción.tex
@@ -2524,11 +2684,14 @@ INPUT ./Estado de la cuestion.tex
 INPUT Estado de la cuestion.tex
 INPUT ./Estado de la cuestion.tex
 INPUT Estado de la cuestion.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8t.tfm
 INPUT ./images//EstadoDelArte/convolucion.png
 INPUT ./images//EstadoDelArte/convolucion.png
 INPUT ./images//EstadoDelArte/convolucion.png
 INPUT ./images//EstadoDelArte/convolucion.png
 INPUT ./images//EstadoDelArte/convolucion.png
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchb8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm
 INPUT ./images//EstadoDelArte/edge_detection_comparative.png
 INPUT ./images//EstadoDelArte/edge_detection_comparative.png
 INPUT ./images//EstadoDelArte/edge_detection_comparative.png
@@ -2544,10 +2707,6 @@ INPUT ./images//EstadoDelArte/Hough_transform_diagram.png
 INPUT ./images//EstadoDelArte/Hough_transform_diagram.png
 INPUT ./images//EstadoDelArte/Hough_transform_diagram.png
 INPUT ./images//EstadoDelArte/Hough_transform_diagram.png
-INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -2605,7 +2764,6 @@ INPUT ./images//Dataset/Arquitectura generador.pdf
 INPUT ./images//Dataset/Arquitectura generador.pdf
 INPUT ./images//Dataset/Arquitectura generador.pdf
 INPUT ./images//Dataset/Arquitectura generador.pdf
-INPUT ./images//Dataset/Arquitectura generador.pdf
 INPUT ./images//Dataset/blender_normal_1.png
 INPUT ./images//Dataset/blender_normal_1.png
 INPUT ./images//Dataset/blender_normal_1.png
@@ -2646,28 +2804,18 @@ INPUT ./images//Dataset/blender_aruco_2.png
 INPUT ./images//Dataset/blender_aruco_2.png
 INPUT ./images//Dataset/blender_aruco_2.png
 INPUT ./images//Dataset/blender_aruco_2.png
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT ./codigo/Prepare_Dataset_YOLO.py
-INPUT codigo/Prepare_Dataset_YOLO.py
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-5.tfm
 INPUT ./codigo/Prepare_Dataset_YOLO.py
 INPUT codigo/Prepare_Dataset_YOLO.py
 INPUT ./codigo/Prepare_Dataset_YOLO.py
 INPUT codigo/Prepare_Dataset_YOLO.py
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
+INPUT ./codigo/Prepare_Dataset_YOLO.py
+INPUT codigo/Prepare_Dataset_YOLO.py
 INPUT ./codigo/Prepare_Dataset_TINY_YOLO.py
 INPUT codigo/Prepare_Dataset_TINY_YOLO.py
 INPUT ./codigo/Prepare_Dataset_TINY_YOLO.py
 INPUT codigo/Prepare_Dataset_TINY_YOLO.py
 INPUT ./codigo/Prepare_Dataset_TINY_YOLO.py
 INPUT codigo/Prepare_Dataset_TINY_YOLO.py
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchr8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8r.tfm
 INPUT ./codigo/Prepare_Dataset_Regressor.py
 INPUT codigo/Prepare_Dataset_Regressor.py
 INPUT ./codigo/Prepare_Dataset_Regressor.py
@@ -2688,7 +2836,6 @@ INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
 INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
 INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
 INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
-INPUT ./images//Dataset/numpy_uniform_histogram_1000.png
 INPUT ./images//Dataset/random_choice_histogram_10.png
 INPUT ./images//Dataset/random_choice_histogram_10.png
 INPUT ./images//Dataset/random_choice_histogram_10.png
@@ -2703,8 +2850,6 @@ INPUT ./images//Dataset/random_choice_histogram_1000.png
 INPUT ./images//Dataset/random_choice_histogram_1000.png
 INPUT ./images//Dataset/random_choice_histogram_1000.png
 INPUT ./images//Dataset/random_choice_histogram_1000.png
-INPUT ./images//Dataset/random_choice_histogram_1000.png
-INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_1.png
@@ -2713,8 +2858,6 @@ INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
-INPUT ./images//Dataset/blenderproc_uniformS03_histogram_2.png
-INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
 INPUT ./images//Dataset/blenderproc_uniformS03_histogram_3.png
@@ -2723,13 +2866,10 @@ INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
 INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
 INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
 INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
-INPUT ./images//Dataset/Muestra_G1_a_sintetica.png
 INPUT ./images//Dataset/Muestra_G3_sintetica.png
 INPUT ./images//Dataset/Muestra_G3_sintetica.png
 INPUT ./images//Dataset/Muestra_G3_sintetica.png
 INPUT ./images//Dataset/Muestra_G3_sintetica.png
-INPUT ./images//Dataset/Muestra_G3_sintetica.png
-INPUT ./images//Dataset/Muestra_small_sintetica.png
 INPUT ./images//Dataset/Muestra_small_sintetica.png
 INPUT ./images//Dataset/Muestra_small_sintetica.png
 INPUT ./images//Dataset/Muestra_small_sintetica.png
@@ -2758,7 +2898,6 @@ INPUT ./Sistema de visión artificial.tex
 INPUT Sistema de visión artificial.tex
 INPUT ./Sistema de visión artificial.tex
 INPUT Sistema de visión artificial.tex
-INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
 INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
 INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
 INPUT ./images//Sistema de vision artificial/Diagrama_vision.png
@@ -2844,8 +2983,6 @@ INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
 INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
 INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
 INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
-INPUT ./images//Sistema de vision artificial/YOLO/Val/P_curve.png
-INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
 INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
 INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
 INPUT ./images//Sistema de vision artificial/YOLO/Val/R_curve.png
@@ -2923,8 +3060,6 @@ INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
-INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png
-INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png
@@ -2934,7 +3069,6 @@ INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/F1_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/F1_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/F1_curve.png
 INPUT ./images//Sistema de vision artificial/TINY YOLO/Val/F1_curve.png
-INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png
@@ -2973,8 +3107,6 @@ INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
-INPUT ./images//Sistema de vision artificial/REGRESSION/legend.png
-INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
 INPUT ./images//Sistema de vision artificial/REGRESSION/val_loss.png
@@ -3069,9 +3201,6 @@ INPUT ./images//Camara RGBD/sin ajuste.png
 INPUT ./images//Camara RGBD/sin ajuste.png
 INPUT ./images//Camara RGBD/sin ajuste.png
 INPUT ./images//Camara RGBD/sin ajuste.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchr8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8r.tfm
 INPUT Thesis.aux
 INPUT ./Thesis.out
 INPUT ./Thesis.out
@@ -3094,7 +3223,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb

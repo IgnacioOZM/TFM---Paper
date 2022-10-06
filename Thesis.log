@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.4)  16 AUG 2022 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.4)  29 AUG 2022 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1984,41 +1984,41 @@ LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
 )
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Info: Redefining \microtypecontext on input line 15.
-Package microtype Info: Applying patch `item' on input line 15.
-Package microtype Info: Applying patch `toc' on input line 15.
-Package microtype Info: Applying patch `eqnum' on input line 15.
-Package microtype Info: Applying patch `footnote' on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Info: Redefining \microtypecontext on input line 19.
+Package microtype Info: Applying patch `item' on input line 19.
+Package microtype Info: Applying patch `toc' on input line 19.
+Package microtype Info: Applying patch `eqnum' on input line 19.
+Package microtype Info: Applying patch `footnote' on input line 19.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 15.
+LaTeX Info: Redefining \showhyphens on input line 19.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -2033,8 +2033,8 @@ File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2105,7 +2105,7 @@ File: translations-basic-dictionary-spanish.trsl (spanish translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `spanish'. on input line 15.
+or `spanish'. on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
 nary-english.trsl
@@ -2113,7 +2113,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 15.
+or `english'. on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -2143,18 +2143,10 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
 
-(./Thesis.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                TFGAna
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 15.
-Package biblatex Info: Reference segment=0 on input line 15.
-Package hyperref Info: Link coloring ON on input line 15.
+(./Thesis.bbl)
+Package biblatex Info: Reference section=0 on input line 19.
+Package biblatex Info: Reference segment=0 on input line 19.
+Package hyperref Info: Link coloring ON on input line 19.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -2166,9 +2158,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count636
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write6
@@ -2213,38 +2205,38 @@ rsion <1.7>, but at most version <1.5> allowed
 <./images//logo.pdf, id=187, 154.5775pt x 138.5175pt>
 File: ./images//logo.pdf Graphic file (type pdf)
 <use ./images//logo.pdf>
-Package pdftex.def Info: ./images//logo.pdf  used on input line 19.
+Package pdftex.def Info: ./images//logo.pdf  used on input line 23.
 (pdftex.def)             Requested size: 142.26378pt x 127.4947pt.
 LaTeX Font Info:    Trying to load font information for T1+opensans-TLF on inpu
-t line 19.
+t line 23.
 (/usr/share/texlive/texmf-dist/tex/latex/opensans/T1opensans-TLF.fd
 File: T1opensans-TLF.fd 2019/06/24 Font definitions for T1/opensans-TLF.
 )
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 18.0pt on input line 19.
+(Font)              scaled to size 18.0pt on input line 23.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `opensans-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/sb/n' will be
-(Font)              scaled to size 18.0pt on input line 19.
+(Font)              scaled to size 18.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/sb/n' will be
-(Font)              scaled to size 27.0pt on input line 19.
+(Font)              scaled to size 27.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 27.0pt on input line 19.
+(Font)              scaled to size 27.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 14.0pt on input line 19.
+(Font)              scaled to size 14.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/sb/n' will be
-(Font)              scaled to size 14.0pt on input line 19.
+(Font)              scaled to size 14.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/sb/n' will be
-(Font)              scaled to size 12.0pt on input line 19.
+(Font)              scaled to size 12.0pt on input line 23.
  [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//logo.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 1
-9.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 2
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
@@ -2253,7 +2245,7 @@ File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -2262,7 +2254,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -2277,52 +2269,37 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 
 
 ]
-
-pdfTeX warning: pdflatex (file ./images/AnexoI.pdf): PDF inclusion: found PDF v
-ersion <1.6>, but at most version <1.5> allowed
-<./images/AnexoI.pdf, id=203, 597.53635pt x 845.04686pt>
+<./images/AnexoI.pdf, id=203, 598.235pt x 844.15387pt>
 File: ./images/AnexoI.pdf Graphic file (type pdf)
 <use ./images/AnexoI.pdf>
-Package pdftex.def Info: ./images/AnexoI.pdf  used on input line 20.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-
-
-pdfTeX warning: pdflatex (file ./images/AnexoI.pdf): PDF inclusion: found PDF v
-ersion <1.6>, but at most version <1.5> allowed
+Package pdftex.def Info: ./images/AnexoI.pdf  used on input line 24.
+(pdftex.def)             Requested size: 598.23354pt x 844.15181pt.
 File: ./images/AnexoI.pdf Graphic file (type pdf)
 <use ./images/AnexoI.pdf>
-Package pdftex.def Info: ./images/AnexoI.pdf  used on input line 20.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-
-
-pdfTeX warning: pdflatex (file ./images/AnexoI.pdf): PDF inclusion: found PDF v
-ersion <1.6>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./images/AnexoI.pdf): PDF inclusion: found PDF v
-ersion <1.6>, but at most version <1.5> allowed
-<./images/AnexoI.pdf, id=206, page=1, 597.53635pt x 845.04686pt>
+Package pdftex.def Info: ./images/AnexoI.pdf  used on input line 24.
+(pdftex.def)             Requested size: 598.23354pt x 844.15181pt.
+<./images/AnexoI.pdf, id=206, page=1, 598.235pt x 844.15387pt>
 File: ./images/AnexoI.pdf Graphic file (type pdf)
 <use ./images/AnexoI.pdf, page 1>
-Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 20.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
+Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 598.23354pt x 844.15181pt.
 File: ./images/AnexoI.pdf Graphic file (type pdf)
 <use ./images/AnexoI.pdf, page 1>
-Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 20.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.7406pt x 843.45624pt.
 File: ./images/AnexoI.pdf Graphic file (type pdf)
 <use ./images/AnexoI.pdf, page 1>
-Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 20.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.7406pt x 843.45624pt.
 File: ./images/AnexoI.pdf Graphic file (type pdf)
 <use ./images/AnexoI.pdf, page 1>
-Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 20.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.7406pt x 843.45624pt.
 File: ./images/AnexoI.pdf Graphic file (type pdf)
 <use ./images/AnexoI.pdf, page 1>
-Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 20.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-[3
+Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.7406pt x 843.45624pt.
+ [3
 
  <./images/AnexoI.pdf>] [4
 
@@ -2361,20 +2338,20 @@ Package pdftex.def Info: ./images/AnexoI.pdf , page1 used on input line 20.
 
 File: ./images//logo.pdf Graphic file (type pdf)
 <use ./images//logo.pdf>
-Package pdftex.def Info: ./images//logo.pdf  used on input line 23.
+Package pdftex.def Info: ./images//logo.pdf  used on input line 27.
 (pdftex.def)             Requested size: 142.26378pt x 127.4947pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 \Frontcover
+l.27 \Frontcover
                  [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.II}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 \Frontcover
+l.27 \Frontcover
                  [2
 
 
@@ -2382,7 +2359,7 @@ l.23 \Frontcover
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ... \\ durante estos largos años de carrera}
+l.29 ... \\ durante estos largos años de carrera}
                                                    [3
 
 
@@ -2390,13 +2367,13 @@ l.25 ... \\ durante estos largos años de carrera}
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ... \\ durante estos largos años de carrera}
+l.29 ... \\ durante estos largos años de carrera}
                                                    [4
 
 ]
-LaTeX Info: Redefining \sptext on input line 25.
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \sptext on input line 29.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
  (./Acknowledgment.tex
 LaTeX Font Info:    Trying to load font information for T1+put on input line 1.
 
@@ -2429,9 +2406,9 @@ LaTeX Info: Redefining \% on input line 8.
 \tf@toc=\write7
 \openout7 = `Thesis.toc'.
 
-LaTeX Info: Redefining \sptext on input line 28.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \sptext on input line 32.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
  [8] (./Thesis.lof
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
@@ -2439,9 +2416,9 @@ LaTeX Info: Redefining \% on input line 2.
 LaTeX Info: Redefining \sptext on input line 4.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
-LaTeX Info: Redefining \sptext on input line 6.
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \sptext on input line 24.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
  [9
 
 
@@ -2450,66 +2427,203 @@ LaTeX Info: Redefining \% on input line 6.
 \tf@lof=\write8
 \openout8 = `Thesis.lof'.
 
-LaTeX Info: Redefining \sptext on input line 29.
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
- [10] (./Thesis.lot
-LaTeX Info: Redefining \sptext on input line 2.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
-LaTeX Info: Redefining \sptext on input line 4.
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-LaTeX Info: Redefining \sptext on input line 7.
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-)
-\tf@lot=\write9
-\openout9 = `Thesis.lot'.
-
- [11
-
-
-
-] [12
-
-]
-[13
-
-
-] [14
-
-] (./Resumen.tex
+LaTeX Info: Redefining \sptext on input line 33.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
+ [10] (./Resumen.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--10
 
  []
 
-[15
+[11
+
 
 ]
+LaTeX Info: Redefining \sptext on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [12]
+LaTeX Info: Redefining \sptext on input line 60.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+ [13]
+<./images//Dataset/Arquitectura generador.pdf, id=487, 897.3525pt x 227.89139pt
+>
+File: ./images//Dataset/Arquitectura generador.pdf Graphic file (type pdf)
+<use ./images//Dataset/Arquitectura generador.pdf>
+Package pdftex.def Info: ./images//Dataset/Arquitectura generador.pdf  used on 
+input line 64.
+(pdftex.def)             Requested size: 403.31508pt x 102.42499pt.
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 77
+.
 
-LaTeX Warning: Reference `fig:resm1' on page \es@scroman {xvi} undefined on inp
-ut line 19.
-
-LaTeX Info: Redefining \sptext on input line 36.
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
-[16]
-
-LaTeX Warning: Reference `fig:resm2' on page \es@scroman {xvii} undefined on in
-put line 50.
-
-LaTeX Info: Redefining \sptext on input line 51.
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
-[17]
-
-LaTeX Warning: Citation 'TFGAna' on page 18 undefined on input line 111.
-
-LaTeX Info: Redefining \sptext on input line 115.
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
-[18]) (./Abstract.tex
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 10.95pt on input line 77.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zi4' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 9.0pt on input line 77.
+LaTeX Info: Redefining \sptext on input line 89.
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+ [14 <./images//Dataset/Arquitectura generador.pdf>]
+<./images//Sistema de vision artificial/REGRESSION/CNNRegression.png, id=516, 3
+508.10625pt x 2203.23125pt>
+File: ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png Graph
+ic file (type png)
+<use ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/CNNR
+egression.png  used on input line 95.
+(pdftex.def)             Requested size: 224.06546pt x 140.69366pt.
+<./images//Sistema de vision artificial/Diagrama_vision.png, id=518, 791.95876p
+t x 251.94125pt>
+File: ./images//Sistema de vision artificial/Diagrama_vision.png Graphic file (
+type png)
+<use ./images//Sistema de vision artificial/Diagrama_vision.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/Diagrama_vision
+.png  used on input line 102.
+(pdftex.def)             Requested size: 358.5061pt x 114.0491pt.
+LaTeX Info: Redefining \sptext on input line 111.
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
+ [15 <./images//Sistema de vision artificial/REGRESSION/CNNRegression.png> <./i
+mages//Sistema de vision artificial/Diagrama_vision.png>]
+<./images//Dataset/Muestra_G1_a_sintetica.png, id=526, 3854.4pt x 2168.1pt>
+File: ./images//Dataset/Muestra_G1_a_sintetica.png Graphic file (type png)
+<use ./images//Dataset/Muestra_G1_a_sintetica.png>
+Package pdftex.def Info: ./images//Dataset/Muestra_G1_a_sintetica.png  used on 
+input line 116.
+(pdftex.def)             Requested size: 134.44064pt x 75.5935pt.
+<./images//Dataset/Muestra_G3_sintetica.png, id=527, 3854.4pt x 2168.1pt>
+File: ./images//Dataset/Muestra_G3_sintetica.png Graphic file (type png)
+<use ./images//Dataset/Muestra_G3_sintetica.png>
+Package pdftex.def Info: ./images//Dataset/Muestra_G3_sintetica.png  used on in
+put line 119.
+(pdftex.def)             Requested size: 134.44064pt x 75.5935pt.
+<./images//Dataset/Muestra_small_sintetica.png, id=528, 1927.2pt x 1084.05pt>
+File: ./images//Dataset/Muestra_small_sintetica.png Graphic file (type png)
+<use ./images//Dataset/Muestra_small_sintetica.png>
+Package pdftex.def Info: ./images//Dataset/Muestra_small_sintetica.png  used on
+ input line 122.
+(pdftex.def)             Requested size: 134.44064pt x 75.61005pt.
+<./images//Dataset/numpy_uniform_histogram_1000.png, id=529, 462.528pt x 346.89
+6pt>
+File: ./images//Dataset/numpy_uniform_histogram_1000.png Graphic file (type png
+)
+<use ./images//Dataset/numpy_uniform_histogram_1000.png>
+Package pdftex.def Info: ./images//Dataset/numpy_uniform_histogram_1000.png  us
+ed on input line 132.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+<./images//Dataset/random_choice_histogram_1000.png, id=530, 462.528pt x 346.89
+6pt>
+File: ./images//Dataset/random_choice_histogram_1000.png Graphic file (type png
+)
+<use ./images//Dataset/random_choice_histogram_1000.png>
+Package pdftex.def Info: ./images//Dataset/random_choice_histogram_1000.png  us
+ed on input line 135.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+<./images//Dataset/blenderproc_uniformS03_histogram_1.png, id=531, 462.528pt x 
+346.896pt>
+File: ./images//Dataset/blenderproc_uniformS03_histogram_1.png Graphic file (ty
+pe png)
+<use ./images//Dataset/blenderproc_uniformS03_histogram_1.png>
+Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_1.p
+ng  used on input line 141.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+<./images//Dataset/blenderproc_uniformS03_histogram_2.png, id=532, 462.528pt x 
+346.896pt>
+File: ./images//Dataset/blenderproc_uniformS03_histogram_2.png Graphic file (ty
+pe png)
+<use ./images//Dataset/blenderproc_uniformS03_histogram_2.png>
+Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_2.p
+ng  used on input line 144.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+<./images//Dataset/blenderproc_uniformS03_histogram_3.png, id=533, 462.528pt x 
+346.896pt>
+File: ./images//Dataset/blenderproc_uniformS03_histogram_3.png Graphic file (ty
+pe png)
+<use ./images//Dataset/blenderproc_uniformS03_histogram_3.png>
+Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_3.p
+ng  used on input line 147.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+<./images//Sistema de vision artificial/YOLO/Val/P_curve.png, id=536, 650.43pt 
+x 433.62pt>
+File: ./images//Sistema de vision artificial/YOLO/Val/P_curve.png Graphic file 
+(type png)
+<use ./images//Sistema de vision artificial/YOLO/Val/P_curve.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/Val/P_curv
+e.png  used on input line 161.
+(pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
+<./images//Sistema de vision artificial/YOLO/Val/R_curve.png, id=537, 650.43pt 
+x 433.62pt>
+File: ./images//Sistema de vision artificial/YOLO/Val/R_curve.png Graphic file 
+(type png)
+<use ./images//Sistema de vision artificial/YOLO/Val/R_curve.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/Val/R_curv
+e.png  used on input line 162.
+(pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
+LaTeX Info: Redefining \sptext on input line 166.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
+ [16 <./images//Dataset/Muestra_G1_a_sintetica.png (PNG copy)> <./images//Datas
+et/Muestra_G3_sintetica.png (PNG copy)> <./images//Dataset/Muestra_small_sintet
+ica.png (PNG copy)> <./images//Dataset/numpy_uniform_histogram_1000.png> <./ima
+ges//Dataset/random_choice_histogram_1000.png> <./images//Dataset/blenderproc_u
+niformS03_histogram_1.png> <./images//Dataset/blenderproc_uniformS03_histogram_
+2.png> <./images//Dataset/blenderproc_uniformS03_histogram_3.png>]
+<./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png, id=547, 650.
+43pt x 433.62pt>
+File: ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png Graphic 
+file (type png)
+<use ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/Val/P
+_curve.png  used on input line 173.
+(pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
+<./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png, id=548, 650.
+43pt x 433.62pt>
+File: ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png Graphic 
+file (type png)
+<use ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/Val/R
+_curve.png  used on input line 174.
+(pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
+LaTeX Info: Redefining \sptext on input line 182.
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
+[17 <./images//Sistema de vision artificial/YOLO/Val/P_curve.png> <./images//Si
+stema de vision artificial/YOLO/Val/R_curve.png> <./images//Sistema de vision a
+rtificial/TINY YOLO/Val/P_curve.png> <./images//Sistema de vision artificial/TI
+NY YOLO/Val/R_curve.png>]
+<./images//Sistema de vision artificial/REGRESSION/val_loss.png, id=557, 806.01
+125pt x 416.55624pt>
+File: ./images//Sistema de vision artificial/REGRESSION/val_loss.png Graphic fi
+le (type png)
+<use ./images//Sistema de vision artificial/REGRESSION/val_loss.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/val_
+loss.png  used on input line 186.
+(pdftex.def)             Requested size: 268.88129pt x 138.95767pt.
+<./images//Sistema de vision artificial/REGRESSION/legend.png, id=558, 268.0012
+5pt x 301.125pt>
+File: ./images//Sistema de vision artificial/REGRESSION/legend.png Graphic file
+ (type png)
+<use ./images//Sistema de vision artificial/REGRESSION/legend.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/lege
+nd.png  used on input line 187.
+(pdftex.def)             Requested size: 89.6248pt x 100.69945pt.
+) (./Abstract.tex
+LaTeX Info: Redefining \sptext on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [18 <./images//Sistema de vision artificial/REGRESSION/val_loss.png> <./images
+//Sistema de vision artificial/REGRESSION/legend.png>]
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2520,21 +2634,121 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--10
 
  []
 
+[21] [22]
+File: ./images//Dataset/Arquitectura generador.pdf Graphic file (type pdf)
+<use ./images//Dataset/Arquitectura generador.pdf>
+Package pdftex.def Info: ./images//Dataset/Arquitectura generador.pdf  used on 
+input line 64.
+(pdftex.def)             Requested size: 403.31508pt x 102.42499pt.
+ [23] [24]
+File: ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png Graph
+ic file (type png)
+<use ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/CNNR
+egression.png  used on input line 95.
+(pdftex.def)             Requested size: 224.06546pt x 140.69366pt.
+File: ./images//Sistema de vision artificial/Diagrama_vision.png Graphic file (
+type png)
+<use ./images//Sistema de vision artificial/Diagrama_vision.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/Diagrama_vision
+.png  used on input line 102.
+(pdftex.def)             Requested size: 358.5061pt x 114.0491pt.
+File: ./images//Dataset/Muestra_G1_a_sintetica.png Graphic file (type png)
+<use ./images//Dataset/Muestra_G1_a_sintetica.png>
+Package pdftex.def Info: ./images//Dataset/Muestra_G1_a_sintetica.png  used on 
+input line 116.
+(pdftex.def)             Requested size: 134.44064pt x 75.5935pt.
+File: ./images//Dataset/Muestra_G3_sintetica.png Graphic file (type png)
+<use ./images//Dataset/Muestra_G3_sintetica.png>
+Package pdftex.def Info: ./images//Dataset/Muestra_G3_sintetica.png  used on in
+put line 119.
+(pdftex.def)             Requested size: 134.44064pt x 75.5935pt.
+File: ./images//Dataset/Muestra_small_sintetica.png Graphic file (type png)
+<use ./images//Dataset/Muestra_small_sintetica.png>
+Package pdftex.def Info: ./images//Dataset/Muestra_small_sintetica.png  used on
+ input line 122.
+(pdftex.def)             Requested size: 134.44064pt x 75.61005pt.
+File: ./images//Dataset/numpy_uniform_histogram_1000.png Graphic file (type png
+)
+<use ./images//Dataset/numpy_uniform_histogram_1000.png>
+Package pdftex.def Info: ./images//Dataset/numpy_uniform_histogram_1000.png  us
+ed on input line 132.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+File: ./images//Dataset/random_choice_histogram_1000.png Graphic file (type png
+)
+<use ./images//Dataset/random_choice_histogram_1000.png>
+Package pdftex.def Info: ./images//Dataset/random_choice_histogram_1000.png  us
+ed on input line 135.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+File: ./images//Dataset/blenderproc_uniformS03_histogram_1.png Graphic file (ty
+pe png)
+<use ./images//Dataset/blenderproc_uniformS03_histogram_1.png>
+Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_1.p
+ng  used on input line 141.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+File: ./images//Dataset/blenderproc_uniformS03_histogram_2.png Graphic file (ty
+pe png)
+<use ./images//Dataset/blenderproc_uniformS03_histogram_2.png>
+Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_2.p
+ng  used on input line 144.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+File: ./images//Dataset/blenderproc_uniformS03_histogram_3.png Graphic file (ty
+pe png)
+<use ./images//Dataset/blenderproc_uniformS03_histogram_3.png>
+Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_3.p
+ng  used on input line 147.
+(pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
+ [25]
 
-LaTeX Warning: Reference `fig:abs1' on page \es@scroman {xxi} undefined on inpu
-t line 19.
+LaTeX Warning: Reference `chap:Artificial vision system fig:YOLO Val PR' on pag
+e \es@scroman {xxvi} undefined on input line 157.
 
-[21] [22] [23]
 
-LaTeX Warning: Citation 'TFGAna' on page 24 undefined on input line 111.
+LaTeX Warning: Reference `chap:Artificial vision system fig:YOLO Val Matrix' on
+ page \es@scroman {xxvi} undefined on input line 157.
 
-[24])
-LaTeX Info: Redefining \sptext on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
- [25] [26
-
-] (./Introducción.tex
+File: ./images//Sistema de vision artificial/YOLO/Val/P_curve.png Graphic file 
+(type png)
+<use ./images//Sistema de vision artificial/YOLO/Val/P_curve.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/Val/P_curv
+e.png  used on input line 161.
+(pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
+File: ./images//Sistema de vision artificial/YOLO/Val/R_curve.png Graphic file 
+(type png)
+<use ./images//Sistema de vision artificial/YOLO/Val/R_curve.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/Val/R_curv
+e.png  used on input line 162.
+(pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
+[26]
+File: ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png Graphic 
+file (type png)
+<use ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/Val/P
+_curve.png  used on input line 173.
+(pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
+File: ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png Graphic 
+file (type png)
+<use ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/Val/R
+_curve.png  used on input line 174.
+(pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
+File: ./images//Sistema de vision artificial/REGRESSION/val_loss.png Graphic fi
+le (type png)
+<use ./images//Sistema de vision artificial/REGRESSION/val_loss.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/val_
+loss.png  used on input line 186.
+(pdftex.def)             Requested size: 268.88129pt x 138.95767pt.
+File: ./images//Sistema de vision artificial/REGRESSION/legend.png Graphic file
+ (type png)
+<use ./images//Sistema de vision artificial/REGRESSION/legend.png>
+Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/lege
+nd.png  used on input line 187.
+(pdftex.def)             Requested size: 89.6248pt x 100.69945pt.
+ [27])
+LaTeX Info: Redefining \sptext on input line 42.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+ [28] (./Introducción.tex
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Trying to load font information for T1+pbk on input line 1.
 
@@ -2549,6 +2763,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [1
 
+
 ]
 LaTeX Info: Redefining \sptext on input line 29.
 LaTeX Info: Redefining \. on input line 29.
@@ -2559,7 +2774,7 @@ LaTeX Info: Redefining \% on input line 29.
 ]
 Cap\'{\i }tulo 2.
 [5]
-<./images//EstadoDelArte/convolucion.png, id=540, 740.7675pt x 318.43968pt>
+<./images//EstadoDelArte/convolucion.png, id=672, 740.7675pt x 318.43968pt>
 File: ./images//EstadoDelArte/convolucion.png Graphic file (type png)
 <use ./images//EstadoDelArte/convolucion.png>
 Package pdftex.def Info: ./images//EstadoDelArte/convolucion.png  used on input
@@ -2569,7 +2784,7 @@ LaTeX Info: Redefining \sptext on input line 42.
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
  [6 <./images//EstadoDelArte/convolucion.png>]
-<./images//EstadoDelArte/edge_detection_comparative.png, id=564, 1530.46782pt x
+<./images//EstadoDelArte/edge_detection_comparative.png, id=693, 1530.46782pt x
  370.38374pt>
 File: ./images//EstadoDelArte/edge_detection_comparative.png Graphic file (type
  png)
@@ -2581,7 +2796,7 @@ LaTeX Info: Redefining \sptext on input line 70.
 LaTeX Info: Redefining \. on input line 70.
 LaTeX Info: Redefining \% on input line 70.
  [7 <./images//EstadoDelArte/edge_detection_comparative.png>]
-<./images//EstadoDelArte/edge_detection_canny.png, id=575, 1467.23157pt x 647.4
+<./images//EstadoDelArte/edge_detection_canny.png, id=703, 1467.23157pt x 647.4
 1875pt>
 File: ./images//EstadoDelArte/edge_detection_canny.png Graphic file (type png)
 <use ./images//EstadoDelArte/edge_detection_canny.png>
@@ -2592,7 +2807,7 @@ LaTeX Info: Redefining \sptext on input line 91.
 LaTeX Info: Redefining \. on input line 91.
 LaTeX Info: Redefining \% on input line 91.
  [8 <./images//EstadoDelArte/edge_detection_canny.png>]
-<./images//EstadoDelArte/Hough_transform_diagram.png, id=586, 803.0pt x 375.402
+<./images//EstadoDelArte/Hough_transform_diagram.png, id=714, 803.0pt x 375.402
 5pt>
 File: ./images//EstadoDelArte/Hough_transform_diagram.png Graphic file (type pn
 g)
@@ -2600,17 +2815,8 @@ g)
 Package pdftex.def Info: ./images//EstadoDelArte/Hough_transform_diagram.png  u
 sed on input line 104.
 (pdftex.def)             Requested size: 313.69026pt x 146.6527pt.
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 10
-5.
- (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
-)
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 10.0pt on input line 105.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zi4' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 LaTeX Info: Redefining \sptext on input line 119.
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
@@ -2619,13 +2825,13 @@ LaTeX Info: Redefining \sptext on input line 145.
 LaTeX Info: Redefining \. on input line 145.
 LaTeX Info: Redefining \% on input line 145.
  [10]
-<./images//EstadoDelArte/AlexNet.pdf, id=613, 861.1854pt x 378.85037pt>
+<./images//EstadoDelArte/AlexNet.pdf, id=740, 861.1854pt x 378.85037pt>
 File: ./images//EstadoDelArte/AlexNet.pdf Graphic file (type pdf)
 <use ./images//EstadoDelArte/AlexNet.pdf>
 Package pdftex.def Info: ./images//EstadoDelArte/AlexNet.pdf  used on input lin
 e 153.
 (pdftex.def)             Requested size: 403.31508pt x 177.42958pt.
-<./images//EstadoDelArte/ImageNet.png, id=617, 865.73438pt x 493.0922pt>
+<./images//EstadoDelArte/ImageNet.png, id=744, 865.73438pt x 493.0922pt>
 File: ./images//EstadoDelArte/ImageNet.png Graphic file (type png)
 <use ./images//EstadoDelArte/ImageNet.png>
 Package pdftex.def Info: ./images//EstadoDelArte/ImageNet.png  used on input li
@@ -2639,14 +2845,13 @@ LaTeX Info: Redefining \sptext on input line 192.
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
  [12 <./images//EstadoDelArte/ImageNet.png>]
-<./images//EstadoDelArte/IRB1400.jpg, id=650, 813.0375pt x 813.0375pt>
+<./images//EstadoDelArte/IRB1400.jpg, id=777, 813.0375pt x 813.0375pt>
 File: ./images//EstadoDelArte/IRB1400.jpg Graphic file (type jpg)
 <use ./images//EstadoDelArte/IRB1400.jpg>
 Package pdftex.def Info: ./images//EstadoDelArte/IRB1400.jpg  used on input lin
 e 201.
 (pdftex.def)             Requested size: 268.88129pt x 268.87387pt.
-)
-(./Metodologia de trabajo.tex
+) (./Metodologia de trabajo.tex
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2656,36 +2861,36 @@ LaTeX Info: Redefining \% on input line 1.
 ]
 Cap\'{\i }tulo 3.
 [15]
-<./images//Metodologia/Arquitectura.pdf, id=672, 613.33138pt x 319.1925pt>
+<./images//Metodologia/Arquitectura.pdf, id=799, 613.33138pt x 319.1925pt>
 File: ./images//Metodologia/Arquitectura.pdf Graphic file (type pdf)
 <use ./images//Metodologia/Arquitectura.pdf>
 Package pdftex.def Info: ./images//Metodologia/Arquitectura.pdf  used on input 
-line 47.
+line 46.
 (pdftex.def)             Requested size: 403.31508pt x 209.89815pt.
-LaTeX Info: Redefining \sptext on input line 56.
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
+LaTeX Info: Redefining \sptext on input line 55.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
  [16]
 
 pdfTeX warning: pdflatex (file ./images//Metodologia/Esquema arquitectura.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./images//Metodologia/Esquema arquitectura.pdf, id=678, 993.7125pt x 241.60262
+<./images//Metodologia/Esquema arquitectura.pdf, id=805, 993.7125pt x 241.60262
 pt>
 File: ./images//Metodologia/Esquema arquitectura.pdf Graphic file (type pdf)
 <use ./images//Metodologia/Esquema arquitectura.pdf>
 Package pdftex.def Info: ./images//Metodologia/Esquema arquitectura.pdf  used o
-n input line 61.
+n input line 60.
 (pdftex.def)             Requested size: 448.13092pt x 108.9561pt.
-LaTeX Info: Redefining \sptext on input line 73.
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \sptext on input line 74.
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
 [17 <./images//Metodologia/Arquitectura.pdf> <./images//Metodologia/Esquema arq
 uitectura.pdf>]
-<./images//Metodologia/Diagrama_de_gantt.png, id=760, 725.328pt x 351.495pt>
+<./images//Metodologia/Diagrama_de_gantt.png, id=887, 725.328pt x 351.495pt>
 File: ./images//Metodologia/Diagrama_de_gantt.png Graphic file (type png)
 <use ./images//Metodologia/Diagrama_de_gantt.png>
 Package pdftex.def Info: ./images//Metodologia/Diagrama_de_gantt.png  used on i
-nput line 126.
+nput line 125.
 (pdftex.def)             Requested size: 448.13092pt x 217.1684pt.
 ) (./Dataset.tex
 LaTeX Info: Redefining \sptext on input line 1.
@@ -2710,8 +2915,6 @@ LaTeX Info: Redefining \sptext on input line 69.
 LaTeX Info: Redefining \. on input line 69.
 LaTeX Info: Redefining \% on input line 69.
  [23]
-<./images//Dataset/Arquitectura generador.pdf, id=797, 897.3525pt x 227.89139pt
->
 File: ./images//Dataset/Arquitectura generador.pdf Graphic file (type pdf)
 <use ./images//Dataset/Arquitectura generador.pdf>
 Package pdftex.def Info: ./images//Dataset/Arquitectura generador.pdf  used on 
@@ -2727,69 +2930,60 @@ Underfull \vbox (badness 1087) has occurred while \output is active []
 LaTeX Info: Redefining \sptext on input line 112.
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
- [25 <./images//Dataset/Arquitectura generador.pdf>]
-<./images//Dataset/blender_normal_1.png, id=827, 1929.2075pt x 1058.95625pt>
+ [25]
+<./images//Dataset/blender_normal_1.png, id=938, 1929.2075pt x 1058.95625pt>
 File: ./images//Dataset/blender_normal_1.png Graphic file (type png)
 <use ./images//Dataset/blender_normal_1.png>
 Package pdftex.def Info: ./images//Dataset/blender_normal_1.png  used on input 
 line 138.
 (pdftex.def)             Requested size: 134.44064pt x 73.79518pt.
-<./images//Dataset/blender_normal_2.png, id=828, 1929.2075pt x 1058.95625pt>
+<./images//Dataset/blender_normal_2.png, id=939, 1929.2075pt x 1058.95625pt>
 File: ./images//Dataset/blender_normal_2.png Graphic file (type png)
 <use ./images//Dataset/blender_normal_2.png>
 Package pdftex.def Info: ./images//Dataset/blender_normal_2.png  used on input 
 line 139.
 (pdftex.def)             Requested size: 134.44064pt x 73.79518pt.
-<./images//Dataset/blender_normal_3.png, id=829, 1929.2075pt x 1058.95625pt>
+<./images//Dataset/blender_normal_3.png, id=940, 1929.2075pt x 1058.95625pt>
 File: ./images//Dataset/blender_normal_3.png Graphic file (type png)
 <use ./images//Dataset/blender_normal_3.png>
 Package pdftex.def Info: ./images//Dataset/blender_normal_3.png  used on input 
 line 140.
 (pdftex.def)             Requested size: 134.44064pt x 73.79518pt.
-<./images//Dataset/blender_normal_4.png, id=830, 1929.2075pt x 1058.95625pt>
+<./images//Dataset/blender_normal_4.png, id=941, 1929.2075pt x 1058.95625pt>
 File: ./images//Dataset/blender_normal_4.png Graphic file (type png)
 <use ./images//Dataset/blender_normal_4.png>
 Package pdftex.def Info: ./images//Dataset/blender_normal_4.png  used on input 
 line 144.
 (pdftex.def)             Requested size: 134.44064pt x 73.79518pt.
-<./images//Dataset/blender_normal_5.png, id=831, 1929.2075pt x 1058.95625pt>
+<./images//Dataset/blender_normal_5.png, id=942, 1929.2075pt x 1058.95625pt>
 File: ./images//Dataset/blender_normal_5.png Graphic file (type png)
 <use ./images//Dataset/blender_normal_5.png>
 Package pdftex.def Info: ./images//Dataset/blender_normal_5.png  used on input 
 line 145.
 (pdftex.def)             Requested size: 134.44064pt x 73.79518pt.
-<./images//Dataset/blender_aruco_1.png, id=832, 1929.2075pt x 1058.95625pt>
+<./images//Dataset/blender_aruco_1.png, id=943, 1929.2075pt x 1058.95625pt>
 File: ./images//Dataset/blender_aruco_1.png Graphic file (type png)
 <use ./images//Dataset/blender_aruco_1.png>
 Package pdftex.def Info: ./images//Dataset/blender_aruco_1.png  used on input l
 ine 146.
 (pdftex.def)             Requested size: 134.44064pt x 73.79518pt.
-<./images//Dataset/blender_normal_6.png, id=833, 1927.2pt x 1084.05pt>
+<./images//Dataset/blender_normal_6.png, id=944, 1927.2pt x 1084.05pt>
 File: ./images//Dataset/blender_normal_6.png Graphic file (type png)
 <use ./images//Dataset/blender_normal_6.png>
 Package pdftex.def Info: ./images//Dataset/blender_normal_6.png  used on input 
 line 150.
 (pdftex.def)             Requested size: 134.44064pt x 75.61005pt.
-<./images//Dataset/blender_aruco_2.png, id=834, 1927.2pt x 1084.05pt>
+<./images//Dataset/blender_aruco_2.png, id=945, 1927.2pt x 1084.05pt>
 File: ./images//Dataset/blender_aruco_2.png Graphic file (type png)
 <use ./images//Dataset/blender_aruco_2.png>
 Package pdftex.def Info: ./images//Dataset/blender_aruco_2.png  used on input l
 ine 151.
 (pdftex.def)             Requested size: 134.44064pt x 75.61005pt.
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
 LaTeX Info: Redefining \sptext on input line 166.
 LaTeX Info: Redefining \. on input line 166.
 LaTeX Info: Redefining \% on input line 166.
- [26]
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 166.
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 166.
 
-(./codigo/Prepare_Dataset_YOLO.py) (./codigo/Prepare_Dataset_TINY_YOLO.py
+[26] (./codigo/Prepare_Dataset_YOLO.py) (./codigo/Prepare_Dataset_TINY_YOLO.py
 LaTeX Info: Redefining \sptext on input line 4.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
@@ -2804,136 +2998,117 @@ LaTeX Info: Redefining \. on input line 18.
 LaTeX Info: Redefining \% on input line 18.
 
 [28])
-<./images//Dataset/numpy_uniform_histogram_10.png, id=919, 462.528pt x 346.896p
-t>
+<./images//Dataset/numpy_uniform_histogram_10.png, id=1030, 462.528pt x 346.896
+pt>
 File: ./images//Dataset/numpy_uniform_histogram_10.png Graphic file (type png)
 <use ./images//Dataset/numpy_uniform_histogram_10.png>
 Package pdftex.def Info: ./images//Dataset/numpy_uniform_histogram_10.png  used
- on input line 196.
+ on input line 195.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-<./images//Dataset/numpy_uniform_histogram_100.png, id=920, 462.528pt x 346.896
-pt>
+<./images//Dataset/numpy_uniform_histogram_100.png, id=1031, 462.528pt x 346.89
+6pt>
 File: ./images//Dataset/numpy_uniform_histogram_100.png Graphic file (type png)
 
 <use ./images//Dataset/numpy_uniform_histogram_100.png>
 Package pdftex.def Info: ./images//Dataset/numpy_uniform_histogram_100.png  use
-d on input line 199.
+d on input line 198.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-<./images//Dataset/numpy_uniform_histogram_1000.png, id=921, 462.528pt x 346.89
-6pt>
 File: ./images//Dataset/numpy_uniform_histogram_1000.png Graphic file (type png
 )
 <use ./images//Dataset/numpy_uniform_histogram_1000.png>
 Package pdftex.def Info: ./images//Dataset/numpy_uniform_histogram_1000.png  us
-ed on input line 202.
+ed on input line 201.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-<./images//Dataset/random_choice_histogram_10.png, id=922, 462.528pt x 346.896p
-t>
+<./images//Dataset/random_choice_histogram_10.png, id=1032, 462.528pt x 346.896
+pt>
 File: ./images//Dataset/random_choice_histogram_10.png Graphic file (type png)
 <use ./images//Dataset/random_choice_histogram_10.png>
 Package pdftex.def Info: ./images//Dataset/random_choice_histogram_10.png  used
- on input line 208.
+ on input line 207.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-<./images//Dataset/random_choice_histogram_100.png, id=923, 462.528pt x 346.896
-pt>
+<./images//Dataset/random_choice_histogram_100.png, id=1033, 462.528pt x 346.89
+6pt>
 File: ./images//Dataset/random_choice_histogram_100.png Graphic file (type png)
 
 <use ./images//Dataset/random_choice_histogram_100.png>
 Package pdftex.def Info: ./images//Dataset/random_choice_histogram_100.png  use
-d on input line 211.
+d on input line 210.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-<./images//Dataset/random_choice_histogram_1000.png, id=924, 462.528pt x 346.89
-6pt>
 File: ./images//Dataset/random_choice_histogram_1000.png Graphic file (type png
 )
 <use ./images//Dataset/random_choice_histogram_1000.png>
 Package pdftex.def Info: ./images//Dataset/random_choice_histogram_1000.png  us
-ed on input line 214.
+ed on input line 213.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-<./images//Dataset/blenderproc_uniformS03_histogram_1.png, id=925, 462.528pt x 
-346.896pt>
 File: ./images//Dataset/blenderproc_uniformS03_histogram_1.png Graphic file (ty
 pe png)
 <use ./images//Dataset/blenderproc_uniformS03_histogram_1.png>
 Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_1.p
-ng  used on input line 220.
+ng  used on input line 219.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-<./images//Dataset/blenderproc_uniformS03_histogram_2.png, id=926, 462.528pt x 
-346.896pt>
 File: ./images//Dataset/blenderproc_uniformS03_histogram_2.png Graphic file (ty
 pe png)
 <use ./images//Dataset/blenderproc_uniformS03_histogram_2.png>
 Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_2.p
-ng  used on input line 223.
+ng  used on input line 222.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-<./images//Dataset/blenderproc_uniformS03_histogram_3.png, id=927, 462.528pt x 
-346.896pt>
 File: ./images//Dataset/blenderproc_uniformS03_histogram_3.png Graphic file (ty
 pe png)
 <use ./images//Dataset/blenderproc_uniformS03_histogram_3.png>
 Package pdftex.def Info: ./images//Dataset/blenderproc_uniformS03_histogram_3.p
-ng  used on input line 226.
+ng  used on input line 225.
 (pdftex.def)             Requested size: 134.44064pt x 100.83015pt.
-LaTeX Info: Redefining \sptext on input line 235.
-LaTeX Info: Redefining \. on input line 235.
-LaTeX Info: Redefining \% on input line 235.
+LaTeX Info: Redefining \sptext on input line 234.
+LaTeX Info: Redefining \. on input line 234.
+LaTeX Info: Redefining \% on input line 234.
  [29]
-<./images//Dataset/Muestra_G1_a_sintetica.png, id=955, 3854.4pt x 2168.1pt>
 File: ./images//Dataset/Muestra_G1_a_sintetica.png Graphic file (type png)
 <use ./images//Dataset/Muestra_G1_a_sintetica.png>
 Package pdftex.def Info: ./images//Dataset/Muestra_G1_a_sintetica.png  used on 
-input line 240.
+input line 239.
 (pdftex.def)             Requested size: 134.44064pt x 75.5935pt.
-<./images//Dataset/Muestra_G3_sintetica.png, id=956, 3854.4pt x 2168.1pt>
 File: ./images//Dataset/Muestra_G3_sintetica.png Graphic file (type png)
 <use ./images//Dataset/Muestra_G3_sintetica.png>
 Package pdftex.def Info: ./images//Dataset/Muestra_G3_sintetica.png  used on in
-put line 243.
+put line 242.
 (pdftex.def)             Requested size: 134.44064pt x 75.5935pt.
-<./images//Dataset/Muestra_small_sintetica.png, id=957, 1927.2pt x 1084.05pt>
 File: ./images//Dataset/Muestra_small_sintetica.png Graphic file (type png)
 <use ./images//Dataset/Muestra_small_sintetica.png>
 Package pdftex.def Info: ./images//Dataset/Muestra_small_sintetica.png  used on
- input line 246.
+ input line 245.
 (pdftex.def)             Requested size: 134.44064pt x 75.61005pt.
-LaTeX Info: Redefining \sptext on input line 259.
-LaTeX Info: Redefining \. on input line 259.
-LaTeX Info: Redefining \% on input line 259.
+LaTeX Info: Redefining \sptext on input line 258.
+LaTeX Info: Redefining \. on input line 258.
+LaTeX Info: Redefining \% on input line 258.
  [30 <./images//Dataset/numpy_uniform_histogram_10.png> <./images//Dataset/nump
-y_uniform_histogram_100.png> <./images//Dataset/numpy_uniform_histogram_1000.pn
-g> <./images//Dataset/random_choice_histogram_10.png> <./images//Dataset/random
-_choice_histogram_100.png> <./images//Dataset/random_choice_histogram_1000.png>
- <./images//Dataset/blenderproc_uniformS03_histogram_1.png> <./images//Dataset/
-blenderproc_uniformS03_histogram_2.png> <./images//Dataset/blenderproc_uniformS
-03_histogram_3.png> <./images//Dataset/Muestra_G1_a_sintetica.png (PNG copy)> <
-./images//Dataset/Muestra_G3_sintetica.png (PNG copy)> <./images//Dataset/Muest
-ra_small_sintetica.png (PNG copy)>]
-<./images//Dataset/instances_yolo.png, id=971, 818.0964pt x 337.5009pt>
+y_uniform_histogram_100.png> <./images//Dataset/random_choice_histogram_10.png>
+ <./images//Dataset/random_choice_histogram_100.png>]
+<./images//Dataset/instances_yolo.png, id=1070, 818.0964pt x 337.5009pt>
 File: ./images//Dataset/instances_yolo.png Graphic file (type png)
 <use ./images//Dataset/instances_yolo.png>
 Package pdftex.def Info: ./images//Dataset/instances_yolo.png  used on input li
-ne 269.
+ne 268.
 (pdftex.def)             Requested size: 403.31508pt x 166.3811pt.
-<./images//Dataset/instances_tiny_yolo_G1_a.png, id=972, 462.528pt x 346.896pt>
-
+<./images//Dataset/instances_tiny_yolo_G1_a.png, id=1071, 462.528pt x 346.896pt
+>
 File: ./images//Dataset/instances_tiny_yolo_G1_a.png Graphic file (type png)
 <use ./images//Dataset/instances_tiny_yolo_G1_a.png>
 Package pdftex.def Info: ./images//Dataset/instances_tiny_yolo_G1_a.png  used o
-n input line 275.
+n input line 274.
 (pdftex.def)             Requested size: 179.24962pt x 134.43668pt.
-<./images//Dataset/instances_tiny_yolo_G3.png, id=973, 462.528pt x 346.896pt>
+<./images//Dataset/instances_tiny_yolo_G3.png, id=1072, 462.528pt x 346.896pt>
 File: ./images//Dataset/instances_tiny_yolo_G3.png Graphic file (type png)
 <use ./images//Dataset/instances_tiny_yolo_G3.png>
 Package pdftex.def Info: ./images//Dataset/instances_tiny_yolo_G3.png  used on 
-input line 278.
+input line 277.
 (pdftex.def)             Requested size: 179.24962pt x 134.43668pt.
-<./images//Dataset/normal_vector_projection_G1_a.png, id=974, 462.528pt x 346.8
-96pt>
+<./images//Dataset/normal_vector_projection_G1_a.png, id=1073, 462.528pt x 346.
+896pt>
 File: ./images//Dataset/normal_vector_projection_G1_a.png Graphic file (type pn
 g)
 <use ./images//Dataset/normal_vector_projection_G1_a.png>
 Package pdftex.def Info: ./images//Dataset/normal_vector_projection_G1_a.png  u
-sed on input line 284.
+sed on input line 283.
 (pdftex.def)             Requested size: 403.31508pt x 302.50107pt.
 )
 (./Sistema de visión artificial.tex
@@ -2951,8 +3126,6 @@ Cap\'{\i }tulo 5.
 [33
 
 ]
-<./images//Sistema de vision artificial/Diagrama_vision.png, id=992, 791.95876p
-t x 251.94125pt>
 File: ./images//Sistema de vision artificial/Diagrama_vision.png Graphic file (
 type png)
 <use ./images//Sistema de vision artificial/Diagrama_vision.png>
@@ -2962,9 +3135,9 @@ Package pdftex.def Info: ./images//Sistema de vision artificial/Diagrama_vision
 LaTeX Info: Redefining \sptext on input line 53.
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
- [34 <./images//Sistema de vision artificial/Diagrama_vision.png>]
-<./images//Sistema de vision artificial/YOLO/esquema_funcionamiento.png, id=100
-0, 998.22937pt x 619.56468pt>
+ [34]
+<./images//Sistema de vision artificial/YOLO/esquema_funcionamiento.png, id=109
+7, 998.22937pt x 619.56468pt>
 File: ./images//Sistema de vision artificial/YOLO/esquema_funcionamiento.png Gr
 aphic file (type png)
 <use ./images//Sistema de vision artificial/YOLO/esquema_funcionamiento.png>
@@ -2979,7 +3152,7 @@ LaTeX Info: Redefining \sptext on input line 174.
 LaTeX Info: Redefining \. on input line 174.
 LaTeX Info: Redefining \% on input line 174.
  [36]
-<./images//Sistema de vision artificial/YOLO/base_YOLO/labels.jpg, id=1022, 578
+<./images//Sistema de vision artificial/YOLO/base_YOLO/labels.jpg, id=1121, 578
 .16pt x 578.16pt>
 File: ./images//Sistema de vision artificial/YOLO/base_YOLO/labels.jpg Graphic 
 file (type jpg)
@@ -2988,7 +3161,7 @@ Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/base_YOLO/
 labels.jpg  used on input line 184.
 (pdftex.def)             Requested size: 219.58661pt x 219.57957pt.
 <./images//Sistema de vision artificial/YOLO/base_YOLO/labels_correlogram.jpg, 
-id=1023, 722.7pt x 722.7pt>
+id=1122, 722.7pt x 722.7pt>
 File: ./images//Sistema de vision artificial/YOLO/base_YOLO/labels_correlogram.
 jpg Graphic file (type jpg)
 <use ./images//Sistema de vision artificial/YOLO/base_YOLO/labels_correlogram.j
@@ -2999,8 +3172,7 @@ labels_correlogram.jpg  used on input line 190.
 LaTeX Info: Redefining \sptext on input line 197.
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
-
-[37]
+ [37]
 Underfull \vbox (badness 1147) has occurred while \output is active []
 
 LaTeX Info: Redefining \sptext on input line 203.
@@ -3008,7 +3180,7 @@ LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
  [38 <./images//Sistema de vision artificial/YOLO/base_YOLO/labels.jpg> <./imag
 es//Sistema de vision artificial/YOLO/base_YOLO/labels_correlogram.jpg>]
-<./images//Sistema de vision artificial/YOLO/evolve_YOLO/evolve.png, id=1037, 7
+<./images//Sistema de vision artificial/YOLO/evolve_YOLO/evolve.png, id=1135, 7
 22.7pt x 867.24pt>
 File: ./images//Sistema de vision artificial/YOLO/evolve_YOLO/evolve.png Graphi
 c file (type png)
@@ -3016,7 +3188,7 @@ c file (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/evolve_YOL
 O/evolve.png  used on input line 212.
 (pdftex.def)             Requested size: 358.5061pt x 430.20483pt.
-<./images//Sistema de vision artificial/YOLO/evolve_YOLO/results.png, id=1038, 
+<./images//Sistema de vision artificial/YOLO/evolve_YOLO/results.png, id=1136, 
 867.24pt x 433.62pt>
 File: ./images//Sistema de vision artificial/YOLO/evolve_YOLO/results.png Graph
 ic file (type png)
@@ -3028,7 +3200,7 @@ LaTeX Info: Redefining \sptext on input line 223.
 LaTeX Info: Redefining \. on input line 223.
 LaTeX Info: Redefining \% on input line 223.
  [39 <./images//Sistema de vision artificial/YOLO/evolve_YOLO/evolve.png>]
-<./images//Sistema de vision artificial/YOLO/metrics_mAP_05_95.png, id=1044, 60
+<./images//Sistema de vision artificial/YOLO/metrics_mAP_05_95.png, id=1143, 60
 7.26875pt x 395.4775pt>
 File: ./images//Sistema de vision artificial/YOLO/metrics_mAP_05_95.png Graphic
  file (type png)
@@ -3036,7 +3208,7 @@ File: ./images//Sistema de vision artificial/YOLO/metrics_mAP_05_95.png Graphic
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/metrics_mA
 P_05_95.png  used on input line 226.
 (pdftex.def)             Requested size: 143.40517pt x 93.3898pt.
-<./images//Sistema de vision artificial/YOLO/metrics_precision.png, id=1045, 60
+<./images//Sistema de vision artificial/YOLO/metrics_precision.png, id=1144, 60
 7.26875pt x 392.46625pt>
 File: ./images//Sistema de vision artificial/YOLO/metrics_precision.png Graphic
  file (type png)
@@ -3044,7 +3216,7 @@ File: ./images//Sistema de vision artificial/YOLO/metrics_precision.png Graphic
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/metrics_pr
 ecision.png  used on input line 227.
 (pdftex.def)             Requested size: 143.40517pt x 92.67871pt.
-<./images//Sistema de vision artificial/YOLO/metrics_recall.png, id=1046, 607.2
+<./images//Sistema de vision artificial/YOLO/metrics_recall.png, id=1145, 607.2
 6875pt x 389.455pt>
 File: ./images//Sistema de vision artificial/YOLO/metrics_recall.png Graphic fi
 le (type png)
@@ -3052,7 +3224,7 @@ le (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/metrics_re
 call.png  used on input line 228.
 (pdftex.def)             Requested size: 143.40517pt x 91.96762pt.
-<./images//Sistema de vision artificial/YOLO/train_box_loss.png, id=1047, 607.2
+<./images//Sistema de vision artificial/YOLO/train_box_loss.png, id=1146, 607.2
 6875pt x 386.44376pt>
 File: ./images//Sistema de vision artificial/YOLO/train_box_loss.png Graphic fi
 le (type png)
@@ -3060,7 +3232,7 @@ le (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/train_box_
 loss.png  used on input line 235.
 (pdftex.def)             Requested size: 143.40517pt x 91.25653pt.
-<./images//Sistema de vision artificial/YOLO/train_cls_loss.png, id=1048, 607.2
+<./images//Sistema de vision artificial/YOLO/train_cls_loss.png, id=1147, 607.2
 6875pt x 391.4625pt>
 File: ./images//Sistema de vision artificial/YOLO/train_cls_loss.png Graphic fi
 le (type png)
@@ -3068,7 +3240,7 @@ le (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/train_cls_
 loss.png  used on input line 236.
 (pdftex.def)             Requested size: 143.40517pt x 92.44168pt.
-<./images//Sistema de vision artificial/YOLO/train_obj_loss.png, id=1049, 607.2
+<./images//Sistema de vision artificial/YOLO/train_obj_loss.png, id=1148, 607.2
 6875pt x 391.4625pt>
 File: ./images//Sistema de vision artificial/YOLO/train_obj_loss.png Graphic fi
 le (type png)
@@ -3076,7 +3248,7 @@ le (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/train_obj_
 loss.png  used on input line 237.
 (pdftex.def)             Requested size: 143.40517pt x 92.44168pt.
-<./images//Sistema de vision artificial/YOLO/val_box_loss.png, id=1050, 607.268
+<./images//Sistema de vision artificial/YOLO/val_box_loss.png, id=1149, 607.268
 75pt x 407.5225pt>
 File: ./images//Sistema de vision artificial/YOLO/val_box_loss.png Graphic file
  (type png)
@@ -3084,7 +3256,7 @@ File: ./images//Sistema de vision artificial/YOLO/val_box_loss.png Graphic file
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/val_box_lo
 ss.png  used on input line 244.
 (pdftex.def)             Requested size: 143.40517pt x 96.23416pt.
-<./images//Sistema de vision artificial/YOLO/val_cls_loss.png, id=1051, 607.268
+<./images//Sistema de vision artificial/YOLO/val_cls_loss.png, id=1150, 607.268
 75pt x 411.5375pt>
 File: ./images//Sistema de vision artificial/YOLO/val_cls_loss.png Graphic file
  (type png)
@@ -3092,7 +3264,7 @@ File: ./images//Sistema de vision artificial/YOLO/val_cls_loss.png Graphic file
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/val_cls_lo
 ss.png  used on input line 245.
 (pdftex.def)             Requested size: 143.40517pt x 97.18228pt.
-<./images//Sistema de vision artificial/YOLO/val_obj_loss.png, id=1052, 607.268
+<./images//Sistema de vision artificial/YOLO/val_obj_loss.png, id=1151, 607.268
 75pt x 409.53pt>
 File: ./images//Sistema de vision artificial/YOLO/val_obj_loss.png Graphic file
  (type png)
@@ -3100,7 +3272,7 @@ File: ./images//Sistema de vision artificial/YOLO/val_obj_loss.png Graphic file
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/val_obj_lo
 ss.png  used on input line 246.
 (pdftex.def)             Requested size: 143.40517pt x 96.70822pt.
-<./images//Sistema de vision artificial/YOLO/Val/confusion_matrix.png, id=1053,
+<./images//Sistema de vision artificial/YOLO/Val/confusion_matrix.png, id=1152,
  867.24pt x 650.43pt>
 File: ./images//Sistema de vision artificial/YOLO/Val/confusion_matrix.png Grap
 hic file (type png)
@@ -3123,23 +3295,19 @@ _loss.png> <./images//Sistema de vision artificial/YOLO/train_obj_loss.png> <./
 images//Sistema de vision artificial/YOLO/val_box_loss.png> <./images//Sistema 
 de vision artificial/YOLO/val_cls_loss.png> <./images//Sistema de vision artifi
 cial/YOLO/val_obj_loss.png>]
-<./images//Sistema de vision artificial/YOLO/Val/P_curve.png, id=1068, 650.43pt
- x 433.62pt>
 File: ./images//Sistema de vision artificial/YOLO/Val/P_curve.png Graphic file 
 (type png)
 <use ./images//Sistema de vision artificial/YOLO/Val/P_curve.png>
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/Val/P_curv
 e.png  used on input line 260.
 (pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
-<./images//Sistema de vision artificial/YOLO/Val/R_curve.png, id=1069, 650.43pt
- x 433.62pt>
 File: ./images//Sistema de vision artificial/YOLO/Val/R_curve.png Graphic file 
 (type png)
 <use ./images//Sistema de vision artificial/YOLO/Val/R_curve.png>
 Package pdftex.def Info: ./images//Sistema de vision artificial/YOLO/Val/R_curv
 e.png  used on input line 261.
 (pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
-<./images//Sistema de vision artificial/YOLO/Val/F1_curve.png, id=1070, 650.43p
+<./images//Sistema de vision artificial/YOLO/Val/F1_curve.png, id=1167, 650.43p
 t x 433.62pt>
 File: ./images//Sistema de vision artificial/YOLO/Val/F1_curve.png Graphic file
  (type png)
@@ -3151,10 +3319,8 @@ LaTeX Info: Redefining \sptext on input line 273.
 LaTeX Info: Redefining \. on input line 273.
 LaTeX Info: Redefining \% on input line 273.
  [41 <./images//Sistema de vision artificial/YOLO/Val/confusion_matrix.png> <./
-images//Sistema de vision artificial/YOLO/Val/P_curve.png> <./images//Sistema d
-e vision artificial/YOLO/Val/R_curve.png> <./images//Sistema de vision artifici
-al/YOLO/Val/F1_curve.png>]
-<./images//Sistema de vision artificial/YOLO/comparativa_YOLO.png, id=1079, 578
+images//Sistema de vision artificial/YOLO/Val/F1_curve.png>]
+<./images//Sistema de vision artificial/YOLO/comparativa_YOLO.png, id=1175, 578
 .16pt x 289.08pt>
 File: ./images//Sistema de vision artificial/YOLO/comparativa_YOLO.png Graphic 
 file (type png)
@@ -3165,8 +3331,9 @@ a_YOLO.png  used on input line 284.
 LaTeX Info: Redefining \sptext on input line 335.
 LaTeX Info: Redefining \. on input line 335.
 LaTeX Info: Redefining \% on input line 335.
- [42 <./images//Sistema de vision artificial/YOLO/comparativa_YOLO.png>]
-<./images//Sistema de vision artificial/TINY YOLO/Train/labels.jpg, id=1086, 57
+
+[42 <./images//Sistema de vision artificial/YOLO/comparativa_YOLO.png>]
+<./images//Sistema de vision artificial/TINY YOLO/Train/labels.jpg, id=1182, 57
 8.16pt x 578.16pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/Train/labels.jpg Graphic
  file (type jpg)
@@ -3175,7 +3342,7 @@ Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/Train
 /labels.jpg  used on input line 352.
 (pdftex.def)             Requested size: 219.58661pt x 219.57957pt.
 <./images//Sistema de vision artificial/TINY YOLO/Train/labels_correlogram.jpg,
- id=1087, 722.7pt x 722.7pt>
+ id=1183, 722.7pt x 722.7pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/Train/labels_correlogram
 .jpg Graphic file (type jpg)
 <use ./images//Sistema de vision artificial/TINY YOLO/Train/labels_correlogram.
@@ -3186,24 +3353,25 @@ Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/Train
 LaTeX Info: Redefining \sptext on input line 361.
 LaTeX Info: Redefining \. on input line 361.
 LaTeX Info: Redefining \% on input line 361.
- [43]
-<./images//Sistema de vision artificial/TINY YOLO/metrics_mAP_05_95.png, id=109
-4, 607.26875pt x 395.4775pt>
+
+[43]
+<./images//Sistema de vision artificial/TINY YOLO/metrics_mAP_05_95.png, id=119
+0, 607.26875pt x 395.4775pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/metrics_mAP_05_95.png Gr
 aphic file (type png)
 <use ./images//Sistema de vision artificial/TINY YOLO/metrics_mAP_05_95.png>
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/metri
 cs_mAP_05_95.png  used on input line 377.
 (pdftex.def)             Requested size: 143.40517pt x 93.3898pt.
-<./images//Sistema de vision artificial/TINY YOLO/metrics_precision.png, id=109
-5, 607.26875pt x 392.46625pt>
+<./images//Sistema de vision artificial/TINY YOLO/metrics_precision.png, id=119
+1, 607.26875pt x 392.46625pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/metrics_precision.png Gr
 aphic file (type png)
 <use ./images//Sistema de vision artificial/TINY YOLO/metrics_precision.png>
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/metri
 cs_precision.png  used on input line 378.
 (pdftex.def)             Requested size: 143.40517pt x 92.67871pt.
-<./images//Sistema de vision artificial/TINY YOLO/metrics_recall.png, id=1096, 
+<./images//Sistema de vision artificial/TINY YOLO/metrics_recall.png, id=1192, 
 607.26875pt x 389.455pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/metrics_recall.png Graph
 ic file (type png)
@@ -3216,7 +3384,7 @@ LaTeX Info: Redefining \. on input line 382.
 LaTeX Info: Redefining \% on input line 382.
  [44 <./images//Sistema de vision artificial/TINY YOLO/Train/labels.jpg> <./ima
 ges//Sistema de vision artificial/TINY YOLO/Train/labels_correlogram.jpg>]
-<./images//Sistema de vision artificial/TINY YOLO/train_box_loss.png, id=1101, 
+<./images//Sistema de vision artificial/TINY YOLO/train_box_loss.png, id=1197, 
 607.26875pt x 386.44376pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/train_box_loss.png Graph
 ic file (type png)
@@ -3224,7 +3392,7 @@ ic file (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/train
 _box_loss.png  used on input line 386.
 (pdftex.def)             Requested size: 143.40517pt x 91.25653pt.
-<./images//Sistema de vision artificial/TINY YOLO/train_cls_loss.png, id=1102, 
+<./images//Sistema de vision artificial/TINY YOLO/train_cls_loss.png, id=1198, 
 607.26875pt x 391.4625pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/train_cls_loss.png Graph
 ic file (type png)
@@ -3232,7 +3400,7 @@ ic file (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/train
 _cls_loss.png  used on input line 387.
 (pdftex.def)             Requested size: 143.40517pt x 92.44168pt.
-<./images//Sistema de vision artificial/TINY YOLO/train_obj_loss.png, id=1103, 
+<./images//Sistema de vision artificial/TINY YOLO/train_obj_loss.png, id=1199, 
 607.26875pt x 391.4625pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/train_obj_loss.png Graph
 ic file (type png)
@@ -3240,7 +3408,7 @@ ic file (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/train
 _obj_loss.png  used on input line 388.
 (pdftex.def)             Requested size: 143.40517pt x 92.44168pt.
-<./images//Sistema de vision artificial/TINY YOLO/val_box_loss.png, id=1104, 60
+<./images//Sistema de vision artificial/TINY YOLO/val_box_loss.png, id=1200, 60
 7.26875pt x 407.5225pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/val_box_loss.png Graphic
  file (type png)
@@ -3248,7 +3416,7 @@ File: ./images//Sistema de vision artificial/TINY YOLO/val_box_loss.png Graphic
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/val_b
 ox_loss.png  used on input line 395.
 (pdftex.def)             Requested size: 143.40517pt x 96.23416pt.
-<./images//Sistema de vision artificial/TINY YOLO/val_cls_loss.png, id=1105, 60
+<./images//Sistema de vision artificial/TINY YOLO/val_cls_loss.png, id=1201, 60
 7.26875pt x 411.5375pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/val_cls_loss.png Graphic
  file (type png)
@@ -3256,7 +3424,7 @@ File: ./images//Sistema de vision artificial/TINY YOLO/val_cls_loss.png Graphic
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/val_c
 ls_loss.png  used on input line 396.
 (pdftex.def)             Requested size: 143.40517pt x 97.18228pt.
-<./images//Sistema de vision artificial/TINY YOLO/val_obj_loss.png, id=1106, 60
+<./images//Sistema de vision artificial/TINY YOLO/val_obj_loss.png, id=1202, 60
 7.26875pt x 409.53pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/val_obj_loss.png Graphic
  file (type png)
@@ -3285,23 +3453,19 @@ icial/TINY YOLO/train_obj_loss.png> <./images//Sistema de vision artificial/TIN
 Y YOLO/val_box_loss.png> <./images//Sistema de vision artificial/TINY YOLO/val_
 cls_loss.png> <./images//Sistema de vision artificial/TINY YOLO/val_obj_loss.pn
 g>]
-<./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png, id=1120, 650
-.43pt x 433.62pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png Graphic 
 file (type png)
 <use ./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png>
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/Val/P
 _curve.png  used on input line 411.
 (pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
-<./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png, id=1121, 650
-.43pt x 433.62pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png Graphic 
 file (type png)
 <use ./images//Sistema de vision artificial/TINY YOLO/Val/R_curve.png>
 Package pdftex.def Info: ./images//Sistema de vision artificial/TINY YOLO/Val/R
 _curve.png  used on input line 412.
 (pdftex.def)             Requested size: 201.65753pt x 134.43404pt.
-<./images//Sistema de vision artificial/TINY YOLO/Val/F1_curve.png, id=1122, 65
+<./images//Sistema de vision artificial/TINY YOLO/Val/F1_curve.png, id=1216, 65
 0.43pt x 433.62pt>
 File: ./images//Sistema de vision artificial/TINY YOLO/Val/F1_curve.png Graphic
  file (type png)
@@ -3313,15 +3477,12 @@ LaTeX Info: Redefining \sptext on input line 425.
 LaTeX Info: Redefining \. on input line 425.
 LaTeX Info: Redefining \% on input line 425.
 
-[46 <./images//Sistema de vision artificial/TINY YOLO/Val/P_curve.png> <./image
-s//Sistema de vision artificial/TINY YOLO/Val/R_curve.png> <./images//Sistema d
-e vision artificial/TINY YOLO/Val/F1_curve.png>]
+[46 <./images//Sistema de vision artificial/TINY YOLO/Val/F1_curve.png>]
 LaTeX Info: Redefining \sptext on input line 441.
 LaTeX Info: Redefining \. on input line 441.
 LaTeX Info: Redefining \% on input line 441.
- [47]
-<./images//Sistema de vision artificial/REGRESSION/CNNRegression.png, id=1134, 
-3508.10625pt x 2203.23125pt>
+
+[47]
 File: ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png Graph
 ic file (type png)
 <use ./images//Sistema de vision artificial/REGRESSION/CNNRegression.png>
@@ -3331,8 +3492,8 @@ egression.png  used on input line 449.
 LaTeX Info: Redefining \sptext on input line 489.
 LaTeX Info: Redefining \. on input line 489.
 LaTeX Info: Redefining \% on input line 489.
- [48 <./images//Sistema de vision artificial/REGRESSION/CNNRegression.png>]
-<./images//Sistema de vision artificial/REGRESSION/train_loss.png, id=1140, 806
+ [48]
+<./images//Sistema de vision artificial/REGRESSION/train_loss.png, id=1232, 806
 .01125pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/train_loss.png Graphic 
 file (type png)
@@ -3340,7 +3501,7 @@ file (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/trai
 n_loss.png  used on input line 495.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/train_u.png, id=1141, 806.01
+<./images//Sistema de vision artificial/REGRESSION/train_u.png, id=1233, 806.01
 125pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/train_u.png Graphic fil
 e (type png)
@@ -3348,7 +3509,7 @@ e (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/trai
 n_u.png  used on input line 496.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/train_v.png, id=1142, 806.01
+<./images//Sistema de vision artificial/REGRESSION/train_v.png, id=1234, 806.01
 125pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/train_v.png Graphic fil
 e (type png)
@@ -3356,7 +3517,7 @@ e (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/trai
 n_v.png  used on input line 499.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/train_w.png, id=1143, 806.01
+<./images//Sistema de vision artificial/REGRESSION/train_w.png, id=1235, 806.01
 125pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/train_w.png Graphic fil
 e (type png)
@@ -3364,7 +3525,7 @@ e (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/trai
 n_w.png  used on input line 500.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/train_x.png, id=1144, 806.01
+<./images//Sistema de vision artificial/REGRESSION/train_x.png, id=1236, 806.01
 125pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/train_x.png Graphic fil
 e (type png)
@@ -3372,7 +3533,7 @@ e (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/trai
 n_x.png  used on input line 503.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/train_y.png, id=1145, 806.01
+<./images//Sistema de vision artificial/REGRESSION/train_y.png, id=1237, 806.01
 125pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/train_y.png Graphic fil
 e (type png)
@@ -3380,23 +3541,19 @@ e (type png)
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/trai
 n_y.png  used on input line 504.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/legend.png, id=1146, 268.001
-25pt x 301.125pt>
 File: ./images//Sistema de vision artificial/REGRESSION/legend.png Graphic file
  (type png)
 <use ./images//Sistema de vision artificial/REGRESSION/legend.png>
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/lege
 nd.png  used on input line 507.
 (pdftex.def)             Requested size: 134.44064pt x 151.05376pt.
-<./images//Sistema de vision artificial/REGRESSION/val_loss.png, id=1147, 806.0
-1125pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/val_loss.png Graphic fi
 le (type png)
 <use ./images//Sistema de vision artificial/REGRESSION/val_loss.png>
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/val_
 loss.png  used on input line 516.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/val_u.png, id=1148, 806.0112
+<./images//Sistema de vision artificial/REGRESSION/val_u.png, id=1238, 806.0112
 5pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/val_u.png Graphic file 
 (type png)
@@ -3404,7 +3561,7 @@ File: ./images//Sistema de vision artificial/REGRESSION/val_u.png Graphic file
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/val_
 u.png  used on input line 517.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/val_v.png, id=1149, 806.0112
+<./images//Sistema de vision artificial/REGRESSION/val_v.png, id=1239, 806.0112
 5pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/val_v.png Graphic file 
 (type png)
@@ -3412,7 +3569,7 @@ File: ./images//Sistema de vision artificial/REGRESSION/val_v.png Graphic file
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/val_
 v.png  used on input line 520.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/val_w.png, id=1150, 806.0112
+<./images//Sistema de vision artificial/REGRESSION/val_w.png, id=1240, 806.0112
 5pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/val_w.png Graphic file 
 (type png)
@@ -3420,7 +3577,7 @@ File: ./images//Sistema de vision artificial/REGRESSION/val_w.png Graphic file
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/val_
 w.png  used on input line 521.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/val_x.png, id=1151, 806.0112
+<./images//Sistema de vision artificial/REGRESSION/val_x.png, id=1241, 806.0112
 5pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/val_x.png Graphic file 
 (type png)
@@ -3428,7 +3585,7 @@ File: ./images//Sistema de vision artificial/REGRESSION/val_x.png Graphic file
 Package pdftex.def Info: ./images//Sistema de vision artificial/REGRESSION/val_
 x.png  used on input line 524.
 (pdftex.def)             Requested size: 201.65753pt x 104.21507pt.
-<./images//Sistema de vision artificial/REGRESSION/val_y.png, id=1152, 806.0112
+<./images//Sistema de vision artificial/REGRESSION/val_y.png, id=1242, 806.0112
 5pt x 416.55624pt>
 File: ./images//Sistema de vision artificial/REGRESSION/val_y.png Graphic file 
 (type png)
@@ -3450,21 +3607,19 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-
-[50 <./images//Sistema de vision artificial/REGRESSION/train_loss.png> <./image
-s//Sistema de vision artificial/REGRESSION/train_u.png> <./images//Sistema de v
-ision artificial/REGRESSION/train_v.png> <./images//Sistema de vision artificia
-l/REGRESSION/train_w.png> <./images//Sistema de vision artificial/REGRESSION/tr
-ain_x.png> <./images//Sistema de vision artificial/REGRESSION/train_y.png> <./i
-mages//Sistema de vision artificial/REGRESSION/legend.png>]
+ [50 <./images//Sistema de vision artificial/REGRESSION/train_loss.png> <./imag
+es//Sistema de vision artificial/REGRESSION/train_u.png> <./images//Sistema de 
+vision artificial/REGRESSION/train_v.png> <./images//Sistema de vision artifici
+al/REGRESSION/train_w.png> <./images//Sistema de vision artificial/REGRESSION/t
+rain_x.png> <./images//Sistema de vision artificial/REGRESSION/train_y.png>]
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [51 <./images//Sistema de vision artificial/REGRESSION/val_loss.png> <./images
-//Sistema de vision artificial/REGRESSION/val_u.png> <./images//Sistema de visi
-on artificial/REGRESSION/val_v.png> <./images//Sistema de vision artificial/REG
-RESSION/val_w.png> <./images//Sistema de vision artificial/REGRESSION/val_x.png
-> <./images//Sistema de vision artificial/REGRESSION/val_y.png>] [52
+ [51 <./images//Sistema de vision artificial/REGRESSION/val_u.png> <./images//S
+istema de vision artificial/REGRESSION/val_v.png> <./images//Sistema de vision 
+artificial/REGRESSION/val_w.png> <./images//Sistema de vision artificial/REGRES
+SION/val_x.png> <./images//Sistema de vision artificial/REGRESSION/val_y.png>] 
+[52
 
 ]
 Cap\'{\i }tulo 6.
@@ -3474,7 +3629,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [54]
 Cap\'{\i }tulo 7.
-<./images//OBS/esquema.png, id=1192, 794.97pt x 614.295pt>
+<./images//OBS/esquema.png, id=1279, 794.97pt x 614.295pt>
 File: ./images//OBS/esquema.png Graphic file (type png)
 <use ./images//OBS/esquema.png>
 Package pdftex.def Info: ./images//OBS/esquema.png  used on input line 8.
@@ -3487,7 +3642,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [56]
 Ap\'{e}ndice A.
-<./images//Sistema de vision artificial/YOLO/arquitectura.png, id=1204, 2730.2p
+<./images//Sistema de vision artificial/YOLO/arquitectura.png, id=1290, 2730.2p
 t x 2495.3225pt>
 File: ./images//Sistema de vision artificial/YOLO/arquitectura.png Graphic file
  (type png)
@@ -3503,7 +3658,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [58 <./images//Sistema de vision artificial/YOLO/arquitectura.png>]
 Ap\'{e}ndice B.
-<./images//Camara RGBD/l515_detailed.jpeg, id=1215, 680.5425pt x 306.14375pt>
+<./images//Camara RGBD/l515_detailed.jpeg, id=1301, 680.5425pt x 306.14375pt>
 File: ./images//Camara RGBD/l515_detailed.jpeg Graphic file (type jpg)
 <use ./images//Camara RGBD/l515_detailed.jpeg>
 Package pdftex.def Info: ./images//Camara RGBD/l515_detailed.jpeg  used on inpu
@@ -3512,19 +3667,19 @@ t line 8.
 [59
 
  <./images//Camara RGBD/l515_detailed.jpeg>]
-<./images//Camara RGBD/0000_Colour.png, id=1222, 1927.2pt x 1084.05pt>
+<./images//Camara RGBD/0000_Colour.png, id=1310, 1927.2pt x 1084.05pt>
 File: ./images//Camara RGBD/0000_Colour.png Graphic file (type png)
 <use ./images//Camara RGBD/0000_Colour.png>
 Package pdftex.def Info: ./images//Camara RGBD/0000_Colour.png  used on input l
 ine 30.
 (pdftex.def)             Requested size: 134.44064pt x 75.61005pt.
-<./images//Camara RGBD/0000_IR.png, id=1223, 1027.84pt x 770.88pt>
+<./images//Camara RGBD/0000_IR.png, id=1311, 1027.84pt x 770.88pt>
 File: ./images//Camara RGBD/0000_IR.png Graphic file (type png)
 <use ./images//Camara RGBD/0000_IR.png>
 Package pdftex.def Info: ./images//Camara RGBD/0000_IR.png  used on input line 
 36.
 (pdftex.def)             Requested size: 134.44064pt x 100.82957pt.
-<./images//Camara RGBD/0000_Depth.png, id=1224, 1927.2pt x 1084.05pt>
+<./images//Camara RGBD/0000_Depth.png, id=1312, 1927.2pt x 1084.05pt>
 File: ./images//Camara RGBD/0000_Depth.png Graphic file (type png)
 <use ./images//Camara RGBD/0000_Depth.png>
 Package pdftex.def Info: ./images//Camara RGBD/0000_Depth.png  used on input li
@@ -3535,19 +3690,19 @@ LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
  [60 <./images//Camara RGBD/0000_Colour.png (PNG copy)> <./images//Camara RGBD/
 0000_IR.png (PNG copy)> <./images//Camara RGBD/0000_Depth.png (PNG copy)>]
-<./images//Camara RGBD/color.png, id=1229, 481.8pt x 362.10281pt>
+<./images//Camara RGBD/color.png, id=1317, 481.8pt x 362.10281pt>
 File: ./images//Camara RGBD/color.png Graphic file (type png)
 <use ./images//Camara RGBD/color.png>
 Package pdftex.def Info: ./images//Camara RGBD/color.png  used on input line 67
 .
 (pdftex.def)             Requested size: 134.44064pt x 101.04pt.
-<./images//Camara RGBD/con ajuste.png, id=1230, 478.03593pt x 359.09157pt>
+<./images//Camara RGBD/con ajuste.png, id=1318, 478.03593pt x 359.09157pt>
 File: ./images//Camara RGBD/con ajuste.png Graphic file (type png)
 <use ./images//Camara RGBD/con ajuste.png>
 Package pdftex.def Info: ./images//Camara RGBD/con ajuste.png  used on input li
 ne 73.
 (pdftex.def)             Requested size: 134.44064pt x 100.98877pt.
-<./images//Camara RGBD/sin ajuste.png, id=1231, 480.29437pt x 359.84438pt>
+<./images//Camara RGBD/sin ajuste.png, id=1319, 480.29437pt x 359.84438pt>
 File: ./images//Camara RGBD/sin ajuste.png Graphic file (type png)
 <use ./images//Camara RGBD/sin ajuste.png>
 Package pdftex.def Info: ./images//Camara RGBD/sin ajuste.png  used on input li
@@ -3558,38 +3713,34 @@ ne 79.
 
 ] [63
 
-]
-LaTeX Info: Redefining \sptext on input line 62.
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
- [64] (./Thesis.aux
+] [64] (./Thesis.aux
 LaTeX Info: Redefining \sptext on input line 31.
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
 LaTeX Info: Redefining \sptext on input line 33.
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
-LaTeX Info: Redefining \sptext on input line 44.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \sptext on input line 78.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
 )
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6BE2EE9E1FAA3C6720AAF7DC7072BCCF;7437.
+(rerunfilecheck)             Checksum: 5C411A53B3C93BA9C17BDED6D8CD5F6B;7437.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58679 strings out of 478287
- 1193500 string characters out of 5849290
- 2277417 words of memory out of 5000000
- 74946 multiletter control sequences out of 15000+600000
- 612439 words of font info for 430 fonts, out of 8000000 for 9000
+ 58746 strings out of 478287
+ 1194764 string characters out of 5849290
+ 2278906 words of memory out of 5000000
+ 74954 multiletter control sequences out of 15000+600000
+ 611004 words of font info for 437 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 103i,18n,131p,1440b,2815s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 103i,18n,131p,1402b,2815s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/opensans/a_jg4h6q.enc}</usr/share/texlive/texmf-dist/fonts
@@ -3606,14 +3757,13 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/a
-dobe/utopia/putri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/
-ubkl8a.pfb>
-Output written on Thesis.pdf (94 pages, 38920753 bytes).
+-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/adobe/utopia/putri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/b
+ookman/ubkl8a.pfb>
+Output written on Thesis.pdf (96 pages, 39032942 bytes).
 PDF statistics:
- 1418 PDF objects out of 1440 (max. 8388607)
- 1093 compressed objects within 11 object streams
- 329 named destinations out of 1000 (max. 500000)
- 108378 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 1510 PDF objects out of 1728 (max. 8388607)
+ 1175 compressed objects within 12 object streams
+ 380 named destinations out of 1000 (max. 500000)
+ 104282 words of extra memory for PDF output out of 106986 (max. 10000000)
 
